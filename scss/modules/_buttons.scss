@@ -1,0 +1,98 @@
+//======================================
+//   buttons
+//======================================
+
+.btn {
+  @include button-state(#c20202);
+  position: relative;
+  display: inline-block;
+  padding: em(21, 30) em(34, 30) em(19, 30) em(34, 30);
+  margin-bottom: 0;
+  border: none;
+  border-radius: em(5);
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  color: #fff;
+  font-size: em(30);
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  user-select: none;
+
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+
+  // button sizes
+  &--tiny {
+
+  }
+
+  &--small {
+
+  }
+
+  &--large {
+
+  }
+
+  &--huge {
+
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+
+  // button font sizes
+  &--alpha {
+
+  }
+
+  &--beta {
+
+  }
+
+  &--gamma {
+
+  }
+
+
+  // button styles
+  &--soft {
+
+  }
+
+  &--hard {
+    border-radius: 0;
+  }
+
+
+  // button functions
+  &--positive {
+
+  }
+
+  &--negative {
+
+  }
+
+  &--inactive {
+
+  }
+}

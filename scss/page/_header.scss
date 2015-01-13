@@ -1,0 +1,50 @@
+// *************************************************************************
+//
+//   Header styles
+//
+// *************************************************************************
+
+.header {
+  display: table-row;
+  height: 1px;
+}
+
+
+//======================================
+//   nav
+//======================================
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zIndex-9;
+  padding-top: em(19);
+  padding-bottom: 0.15em;
+  background-color: $bg-blue;
+}
+
+.nav {
+  text-align: justify;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: em(18);
+
+    .active &,
+    &:hover,
+    &:active {
+      color: #000;
+    }
+  }
+}

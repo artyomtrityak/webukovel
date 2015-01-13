@@ -1,0 +1,89 @@
+// *************************************************************************
+//
+//   Variables
+//
+// *************************************************************************
+
+// ----- media queries breakpoints ----- //
+$breakpoints: (
+  small : '(max-width: 40em)',
+  medium: '(min-width: 40.063em) and (max-width: 64em)',
+  large : '(min-width: 64.063em) and (max-width: 90em)',
+  huge  : '(min-width: 90.063em)'
+);
+
+
+// ----- Columns config and container width ----- //
+$container-width: 1000;
+$fg-column      : 116px;
+$fg-gutter      : 9px;
+$fg-max-columns : 8;
+
+
+// ----- Font size ----- //
+$base-font-size: 14;
+$headings: (
+  h1: 36,
+  h2: 32,
+  h3: 24,
+  h4: 18,
+  h5: 16,
+  h6: 14
+);
+
+
+// ----- Line height ----- //
+$base-line-height: 1.25;
+$lh-medium       : 1.6;
+$lh-large        : 1.8;
+
+
+// ----- Font family ----- //
+$base-font       : 'Blogger Sans Medium';
+$font-light      : 'Blogger Sans Light';
+$base-font-family: $base-font, Tahoma, Geneva, sans-serif;
+
+
+// ----- Colors ----- //
+$base-color     : #1b2f4c;
+$base-link-color: #00a8ff;
+$color-red      : #c20202;
+$color-blue     : #00a8ff;
+
+
+// ----- Background colors ----- //
+$base-background: #fff;
+$bg-blue        : #00a8ff;
+
+
+// ----- Border colors ----- //
+$base-border: #ccc;
+$border-red : #ee8888;
+$border-blue: #8888ee;
+
+
+// ----- Border radius ----- //
+$base-radius : 8;
+$radius-small: 3;
+$radius-large: 10;
+
+
+// ----- Offsets ----- //
+$base-spacing-unit  : 24px;
+$half-spacing-unit  : $base-spacing-unit / 2;
+$base-gutter        : 10;
+$base-offset        : 1em;
+$base-heading-offset: 1em;
+
+
+// ----- Z-Index Scale ----- //
+$zIndex-1 : 10;
+$zIndex-2 : 20;
+$zIndex-3 : 30;
+$zIndex-4 : 40;
+$zIndex-5 : 50;
+$zIndex-6 : 60;
+$zIndex-7 : 70;
+$zIndex-8 : 80;
+$zIndex-9 : 90;
+$zIndex-10: 100;

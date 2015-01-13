@@ -1,0 +1,398 @@
+// *************************************************************************
+//
+//   Base-level tags (body, p, etc.)
+//
+// *************************************************************************
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-width: em($container-width + 20);
+  margin: 0 auto;
+  background-color: $base-background;
+}
+
+
+//======================================
+//   Sections
+//======================================
+// section {
+// }
+
+// nav {
+// }
+
+// article {
+// }
+
+// aside {
+// }
+
+// header {
+// }
+
+// footer {
+// }
+
+// address {
+// }
+
+// main {
+// }
+
+
+//======================================
+//   Grouping content
+//======================================
+p {
+  margin: 0 0 $base-offset 0;
+}
+
+// hr {
+// }
+
+// pre {
+// }
+
+// blockquote {
+// }
+
+ol,
+ul  {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// li {
+// }
+
+// dl {
+// }
+
+// dt {
+// }
+
+// dd {
+// }
+
+figure {
+  margin: 0;
+}
+
+// figcaption {
+// }
+
+
+//======================================
+//   Headings
+//======================================
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 $base-heading-offset 0;
+  line-height: 1.1;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+
+//======================================
+//   Links
+//======================================
+a {
+  text-decoration: none;
+}
+
+
+//======================================
+//   Text-level semantics
+//======================================
+// em {
+// }
+
+strong {
+  font-weight: 400;
+}
+
+// small {
+// }
+
+// s {
+// }
+
+cite {
+  font-style: normal;
+}
+
+// q {
+// }
+
+// dfn {
+// }
+
+// abbr[title] {
+
+// }
+
+// data {
+// }
+
+// time {
+// }
+
+// code {
+// }
+
+// var {
+// }
+
+// samp {
+// }
+
+// kbd {
+// }
+
+// sub {
+// }
+
+// sup {
+// }
+
+// i {
+// }
+
+b {
+  font-weight: 400;
+}
+
+// u {
+// }
+
+// mark {
+// }
+
+// ruby {
+// }
+
+// rt {
+// }
+
+// rp {
+// }
+
+// bdi {
+// }
+
+// bdo {
+// }
+
+// br {
+// }
+
+// wbr {
+// }
+
+
+//======================================
+//   Edits
+//======================================
+// ins {
+// }
+
+// del {
+// }
+
+
+//======================================
+//   Flexible media
+//======================================
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+//======================================
+//   Embedded content
+//======================================
+img {
+  vertical-align: middle;
+}
+
+// iframe {
+// }
+
+// embed {
+// }
+
+// object {
+// }
+
+// param {
+// }
+
+// video {
+// }
+
+// audio {
+// }
+
+// source {
+// }
+
+// track {
+// }
+
+// canvas {
+// }
+
+// map {
+// }
+
+// area {
+// }
+
+// svg {
+// }
+
+// math {
+// }
+
+
+//======================================
+//   Forms
+//======================================
+input,
+button,
+textarea,
+select {
+  outline: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button,
+input[type="button"] {
+  padding: 0;
+  border: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// form {
+// }
+
+// fieldset {
+// }
+
+// legend {
+// }
+
+// label {
+// }
+
+// input {
+// }
+
+// button {
+// }
+
+// select {
+// }
+
+// datalist {
+// }
+
+// optgroup {
+// }
+
+// option {
+// }
+
+// textarea {
+// }
+
+// keygen {
+// }
+
+// output {
+// }
+
+// progress {
+// }
+
+// meter {
+// }
+
+
+//======================================
+//   Tabular data
+//======================================
+table {
+  width: 100%;
+}
+
+// caption {
+// }
+
+// colgroup {
+// }
+
+// col {
+// }
+
+// tbody {
+// }
+
+// thead {
+// }
+
+// tfoot {
+// }
+
+// tr {
+// }
+
+// td {
+// }
+
+// th {
+// }
+
+
+//======================================
+//   Interactive elements
+//======================================
+// details {
+// }
+
+// summary {
+// }
+
+// menuitem {
+// }
+
+// menu {
+// }

@@ -1,0 +1,125 @@
+//======================================
+//   star-rating widget
+//======================================
+
+// .rating {
+//   @extend %clearfix;
+//   margin-bottom: 1.1rem;
+//   line-height: 1;
+
+//   &__text {
+//     float: left;
+//     margin-right: 0.9rem;
+//   }
+
+//   &__stars {
+//     float: left;
+//     position: relative;
+//     bottom: 0.9rem;
+//   }
+
+//   &__star {
+//     @include sprite-2x($star, $star-2x);
+//     float: left;
+//     margin-right: 0.6rem;
+//   }
+
+//   // rating 0.5
+//   &__stars--s0-5 &__star {
+//     &:first-child {
+//       @include sprite-position($star-half);
+//     }
+//   }
+
+//   // rating 1
+//   &__stars--s1 &__star {
+//     &:first-child {
+//       @include sprite-position($star-active);
+//     }
+//   }
+
+//   // rating 1.5
+//   &__stars--s1-5 &__star {
+//     &:first-child {
+//       @include sprite-position($star-active);
+//     }
+
+//     &:nth-child(2) {
+//       @include sprite-position($star-half);
+//     }
+//   }
+
+//   // rating 2
+//   &__stars--s2 &__star {
+//     &:first-child,
+//     &:nth-child(2) {
+//       @include sprite-position($star-active);
+//     }
+//   }
+
+//   // rating 2.5
+//   &__stars--s2-5 &__star {
+//     &:first-child {
+//       @include sprite-position($star-active);
+//     }
+
+//     &:nth-child(2) {
+//       @include sprite-position($star-active);
+//     }
+
+//     &:nth-child(3) {
+//       @include sprite-position($star-half);
+//     }
+//   }
+
+//   // rating 3
+//   &__stars--s3 &__star {
+//     &:first-child,
+//     &:nth-child(2),
+//     &:nth-child(3) {
+//       @include sprite-position($star-active);
+//     }
+//   }
+
+//   // rating 3.5
+//   &__stars--s3-5 &__star {
+//     &:first-child {
+//       @include sprite-position($star-active);
+//     }
+
+//     &:nth-child(2) {
+//       @include sprite-position($star-active);
+//     }
+
+//     &:nth-child(3) {
+//       @include sprite-position($star-active);
+//     }
+
+//     &:nth-child(4) {
+//       @include sprite-position($star-half);
+//     }
+//   }
+
+//   // rating 4
+//   &__stars--s4 &__star {
+//     @include sprite-position($star-active);
+
+//     &:last-child {
+//       @include sprite-position($star);
+//     }
+//   }
+
+//   // rating 4.5
+//   &__stars--s4-5 &__star {
+//     @include sprite-position($star-active);
+
+//     &:last-child {
+//       @include sprite-position($star-half);
+//     }
+//   }
+
+//   // rating 5
+//   &__stars--s5 &__star {
+//       @include sprite-position($star-active);
+//   }
+// }

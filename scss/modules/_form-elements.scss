@@ -1,0 +1,125 @@
+//======================================
+//   form elements (inputs, textarea)
+//======================================
+
+.input,
+.textarea {
+  border: em(1) solid #ccc;
+  background-color: #fff;
+
+  &:focus {
+    border-color: #66AFE9;
+  }
+}
+
+.input {
+  height: em(40);
+  padding: em(5) em(10);
+  width: em(280);
+
+  // text input sizes
+  &--tiny {
+    width: em(100);
+  }
+
+  &--small {
+    width: em(150);
+  }
+
+  &--large {
+    width: em(350);
+  }
+
+  &--huge {
+    width: em(400);
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+
+  // text input styles
+  &--soft {
+
+  }
+
+  &--hard {
+    border-radius: 0;
+  }
+
+
+  // text input font sizes
+  &--alpha {
+
+  }
+
+  &--beta {
+
+  }
+
+  &--gamma {
+
+  }
+
+
+  // validation states
+  &--success {
+
+  }
+
+  &--warning {
+
+  }
+
+  &--error {
+
+  }
+}
+
+.textarea {
+  padding: em(10) em(10) em(5) em(10);
+  display: block;
+  width: em(430);
+  height: em(112);
+}
+
+// radio buttons
+.radio {
+  display: inline-block;
+  line-height: 1;
+
+  input {
+    display: none;
+  }
+
+  i {
+    // @include sprite($radio);
+    margin-right: em(12);
+    float: left;
+  }
+
+  input:checked + i {
+    // @include sprite-position($radio-checked);
+  }
+}
+
+// checkboxes
+.checkbox {
+  display: inline-block;
+  line-height: 1;
+
+  input {
+    display: none;
+  }
+
+  i {
+    // @include sprite($radio);
+    margin-right: em(12);
+    float: left;
+  }
+
+  input:checked + i {
+    // @include sprite-position($radio-checked);
+  }
+}

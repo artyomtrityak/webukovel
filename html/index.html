@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>WeBukovel</title>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- page -->
-    <div class="page">
-      <!-- header -->
-      <header class="header">
-        <nav class="fixed-nav">
-          <ul class="nav wrap">
-            <li class="nav__item hidden"><a href="#intro" class="nav__link">ScrollSpy link</a></li>
-            <li class="nav__item"><a href="#venue" class="nav__link">Место проведения</a></li>
-            <li class="nav__item"><a href="#speakers" class="nav__link">Докладчики</a></li>
-            <li class="nav__item"><a href="#support" class="nav__link">Поддержка</a></li>
-            <li class="nav__item"><a href="#initiators" class="nav__link">Организаторы</a></li>
-            <!-- <li class="nav__item"><a href="" class="nav__link">Расписание</a></li> -->
-          </ul>
-        </nav>
-      </header>
-      <!-- END header -->
-
+@@include('_header.html')
 
 <!-- middle -->
 <div class="middle">
@@ -247,38 +213,4 @@
 </div>
 <!-- END middle -->
 
-
-      <!-- footer -->
-      <footer class="footer">
-        <div class="wrap">
-          <div class="socials">
-            <a href="" class="socials__btn" title="Facebook"></a>
-            <a href="" class="socials__btn socials__btn--vk" title="ВКонтакте"></a>
-            <a href="" class="socials__btn socials__btn--tw" title="Twitter"></a>
-          </div>
-
-          <div class="fixed-socials">
-            <div class="fixed-socials__inner">
-              <button class="fixed-socials__arrow" type="button"></button>
-              <a href="" class="fixed-socials__btn" title="ВКонтакте"></a>
-              <a href="" class="fixed-socials__btn fixed-socials__btn--tw" title="Twitter"></a>
-              <a href="" class="fixed-socials__btn fixed-socials__btn--fb" title="Facebook"></a>
-              <button class="fixed-socials__arrow fixed-socials__arrow--down" type="button"></button>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- END footer -->
-    </div>
-    <!-- END page -->
-
-    <!-- Load scripts -->
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/jquery.countdown.min.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
-    <script src="js/main.js"></script>
-
-  </body>
-</html>
-
+@@include('_footer.html')

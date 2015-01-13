@@ -1,0 +1,169 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$arrow-down-name: 'arrow-down';
+$arrow-down-x: 0px;
+$arrow-down-y: 209px;
+$arrow-down-offset-x: 0px;
+$arrow-down-offset-y: -209px;
+$arrow-down-width: 37px;
+$arrow-down-height: 52px;
+$arrow-down-total-width: 288px;
+$arrow-down-total-height: 261px;
+$arrow-down-image: '../img/sprite.png';
+$arrow-down: 0px 209px 0px -209px 37px 52px 288px 261px '../img/sprite.png' 'arrow-down';
+$arrow-up-name: 'arrow-up';
+$arrow-up-x: 37px;
+$arrow-up-y: 209px;
+$arrow-up-offset-x: -37px;
+$arrow-up-offset-y: -209px;
+$arrow-up-width: 37px;
+$arrow-up-height: 52px;
+$arrow-up-total-width: 288px;
+$arrow-up-total-height: 261px;
+$arrow-up-image: '../img/sprite.png';
+$arrow-up: 37px 209px -37px -209px 37px 52px 288px 261px '../img/sprite.png' 'arrow-up';
+$cup-name: 'cup';
+$cup-x: 0px;
+$cup-y: 0px;
+$cup-offset-x: 0px;
+$cup-offset-y: 0px;
+$cup-width: 108px;
+$cup-height: 118px;
+$cup-total-width: 288px;
+$cup-total-height: 261px;
+$cup-image: '../img/sprite.png';
+$cup: 0px 0px 0px 0px 108px 118px 288px 261px '../img/sprite.png' 'cup';
+$facebook-big-name: 'facebook-big';
+$facebook-big-x: 108px;
+$facebook-big-y: 0px;
+$facebook-big-offset-x: -108px;
+$facebook-big-offset-y: 0px;
+$facebook-big-width: 90px;
+$facebook-big-height: 91px;
+$facebook-big-total-width: 288px;
+$facebook-big-total-height: 261px;
+$facebook-big-image: '../img/sprite.png';
+$facebook-big: 108px 0px -108px 0px 90px 91px 288px 261px '../img/sprite.png' 'facebook-big';
+$facebook-name: 'facebook';
+$facebook-x: 90px;
+$facebook-y: 118px;
+$facebook-offset-x: -90px;
+$facebook-offset-y: -118px;
+$facebook-width: 60px;
+$facebook-height: 60px;
+$facebook-total-width: 288px;
+$facebook-total-height: 261px;
+$facebook-image: '../img/sprite.png';
+$facebook: 90px 118px -90px -118px 60px 60px 288px 261px '../img/sprite.png' 'facebook';
+$twitter-big-name: 'twitter-big';
+$twitter-big-x: 198px;
+$twitter-big-y: 0px;
+$twitter-big-offset-x: -198px;
+$twitter-big-offset-y: 0px;
+$twitter-big-width: 90px;
+$twitter-big-height: 91px;
+$twitter-big-total-width: 288px;
+$twitter-big-total-height: 261px;
+$twitter-big-image: '../img/sprite.png';
+$twitter-big: 198px 0px -198px 0px 90px 91px 288px 261px '../img/sprite.png' 'twitter-big';
+$twitter-name: 'twitter';
+$twitter-x: 150px;
+$twitter-y: 118px;
+$twitter-offset-x: -150px;
+$twitter-offset-y: -118px;
+$twitter-width: 60px;
+$twitter-height: 60px;
+$twitter-total-width: 288px;
+$twitter-total-height: 261px;
+$twitter-image: '../img/sprite.png';
+$twitter: 150px 118px -150px -118px 60px 60px 288px 261px '../img/sprite.png' 'twitter';
+$vk-big-name: 'vk-big';
+$vk-big-x: 0px;
+$vk-big-y: 118px;
+$vk-big-offset-x: 0px;
+$vk-big-offset-y: -118px;
+$vk-big-width: 90px;
+$vk-big-height: 91px;
+$vk-big-total-width: 288px;
+$vk-big-total-height: 261px;
+$vk-big-image: '../img/sprite.png';
+$vk-big: 0px 118px 0px -118px 90px 91px 288px 261px '../img/sprite.png' 'vk-big';
+$vk-name: 'vk';
+$vk-x: 210px;
+$vk-y: 118px;
+$vk-offset-x: -210px;
+$vk-offset-y: -118px;
+$vk-width: 60px;
+$vk-height: 60px;
+$vk-total-width: 288px;
+$vk-total-height: 261px;
+$vk-image: '../img/sprite.png';
+$vk: 210px 118px -210px -118px 60px 60px 288px 261px '../img/sprite.png' 'vk';
+$spritesheet-width: 288px;
+$spritesheet-height: 261px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: $arrow-down $arrow-up $cup $facebook-big $facebook $twitter-big $twitter $vk-big $vk;
+$spritesheet: 288px 261px '../img/sprite.png' $spritesheet-sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// *************************************************************************
+//
+//   Footer styles
+//
+// *************************************************************************
+
+.footer {
+  display: table-row;
+  height: 1px;
+
+  .wrap {
+    position: relative;
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    background: image-url('bg-trees-blue.png') 12px 100% no-repeat;
+  }
+}
+
+
+//======================================
+//   contacts
+//======================================

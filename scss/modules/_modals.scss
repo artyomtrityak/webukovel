@@ -1,0 +1,42 @@
+//======================================
+//   Modal windows and overlay
+//======================================
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zIndex-10;
+  transform: translateZ(0);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+  text-align: center;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+}
+
+.modal {
+  position: relative;
+  display: inline-block;
+  width: em(500);
+  padding: em(20) em(20) em(20) em(20);
+  margin: em(20) 0;
+  vertical-align: middle;
+  text-align: left;
+  background-color: #fff;
+  transition: all 0.3s ease;
+
+  &__close-btn {
+    // @include sprite($close);
+    position: absolute;
+    top: em(30);
+    right: em(30);
+  }
+}

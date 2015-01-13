@@ -1,0 +1,187 @@
+// *************************************************************************
+//
+//   Typography
+//
+// *************************************************************************
+
+html {
+  font-size: em($base-font-size, 16);
+}
+
+body {
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $base-color;
+}
+
+input,
+textarea {
+  @include placeholder {
+    font-size: 1em;
+    color: lighten($base-color, 10%);
+  }
+}
+
+a,
+.link {
+  color: $base-link-color;
+  transition: color 0.15s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: invert($base-link-color);
+  }
+}
+
+.link:active {
+  color: invert($base-link-color) !important;
+}
+
+
+//======================================
+//   Embedding custom fonts
+//======================================
+@include font-face('Blogger Sans Light', 'fonts/light/BloggerSans-Light', normal, normal);
+@include font-face('Blogger Sans Medium', 'fonts/medium/BloggerSans-Medium', normal, normal);
+
+
+//======================================
+//   Typesetting for text-content blocks
+//======================================
+.typography {
+  >:first-child {
+    margin-top: 0;
+  }
+
+  >:last-child {
+    margin-bottom: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: $base-heading-offset 0;
+  }
+
+  ol,
+  ul {
+    margin: $base-offset 0;
+    padding-left: em(40);
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
+
+    ul {
+      list-style-type: circle;
+    }
+  }
+
+  li {
+    margin-top: em(10);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p,
+  dl,
+  figure {
+    margin: $base-offset 0;
+  }
+
+  dt {
+    margin-top: em(10);
+    font-weight: 700;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  blockquote {
+    font-style: italic;
+    border-left: em(1) solid $base-color;
+    padding-left: $base-offset;
+    margin: $base-offset 0;
+  }
+
+  pre {
+    margin: $base-offset 0;
+  }
+
+  code {
+    @extend %break-words;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 0.8em;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: pre-line;
+    padding: em(5) em(10);
+    color: #4e4e4e;
+    background-color: #f5f2f0
+  }
+
+  i,
+  em,
+  cite {
+    font-style: italic;
+  }
+
+  abbr {
+    text-transform: uppercase;
+    border-bottom: em(1) dotted $base-color;
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+
+  img {
+    margin: $base-offset 0;
+  }
+
+  hr {
+    height: em(1);
+    border: none;
+    margin: $base-offset 0;
+    background-color: $base-color;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: em(1) solid $base-color;
+    width: 100%;
+    margin: $base-offset 0;
+  }
+
+  th,
+  td {
+    text-align: left;
+    border: em(1) solid $base-color;
+    padding: em(10);
+  }
+
+  th {
+    font-weight: 700;
+  }
+}
