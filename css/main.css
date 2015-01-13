@@ -1570,3 +1570,7 @@ h6, .h6 {
     /* line 46, D:\Projects\WeBukovel\scss/page/_header.scss */
     .active .nav__link, .nav__link:hover, .nav__link:active {
       color: #000; }
+
+.map img {
+  max-width: none;
+}
