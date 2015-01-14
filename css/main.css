@@ -1,1576 +1,326 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-*/
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
-/* line 10, D:\Projects\WeBukovel\scss/global/normalize */
-*, *:before, *:after {
-  box-sizing: border-box; }
-
-/* line 14, D:\Projects\WeBukovel\scss/global/normalize */
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
-
-/* line 20, D:\Projects\WeBukovel\scss/global/normalize */
-body {
-  margin: 0; }
-
-/* line 36, D:\Projects\WeBukovel\scss/global/normalize */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block; }
-
-/* line 43, D:\Projects\WeBukovel\scss/global/normalize */
-audio, canvas, progress, video {
-  display: inline-block;
-  vertical-align: baseline; }
-
-/* line 48, D:\Projects\WeBukovel\scss/global/normalize */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/* line 54, D:\Projects\WeBukovel\scss/global/normalize */
-[hidden], template {
-  display: none; }
-
-/* line 58, D:\Projects\WeBukovel\scss/global/normalize */
-a {
-  background-color: transparent; }
-
-/* line 63, D:\Projects\WeBukovel\scss/global/normalize */
-a:active, a:hover {
-  outline: 0; }
-
-/* line 67, D:\Projects\WeBukovel\scss/global/normalize */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/* line 72, D:\Projects\WeBukovel\scss/global/normalize */
-b, strong {
-  font-weight: bold; }
-
-/* line 76, D:\Projects\WeBukovel\scss/global/normalize */
-dfn {
-  font-style: italic; }
-
-/* line 80, D:\Projects\WeBukovel\scss/global/normalize */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/* line 85, D:\Projects\WeBukovel\scss/global/normalize */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/* line 90, D:\Projects\WeBukovel\scss/global/normalize */
-small {
-  font-size: 80%; }
-
-/* line 95, D:\Projects\WeBukovel\scss/global/normalize */
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-/* line 102, D:\Projects\WeBukovel\scss/global/normalize */
-sup {
-  top: -0.5em; }
-
-/* line 106, D:\Projects\WeBukovel\scss/global/normalize */
-sub {
-  bottom: -0.25em; }
-
-/* line 110, D:\Projects\WeBukovel\scss/global/normalize */
-img {
-  border: 0; }
-
-/* line 114, D:\Projects\WeBukovel\scss/global/normalize */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* line 118, D:\Projects\WeBukovel\scss/global/normalize */
-figure {
-  margin: 1em 40px; }
-
-/* line 122, D:\Projects\WeBukovel\scss/global/normalize */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-/* line 128, D:\Projects\WeBukovel\scss/global/normalize */
-pre {
-  overflow: auto; }
-
-/* line 135, D:\Projects\WeBukovel\scss/global/normalize */
-code, kbd, pre, samp {
-  font-family: monospace, monospace;
-  font-size: 1em; }
-
-/* line 144, D:\Projects\WeBukovel\scss/global/normalize */
-button, input, optgroup, select, textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0; }
-
-/* line 150, D:\Projects\WeBukovel\scss/global/normalize */
-button {
-  overflow: visible; }
-
-/* line 155, D:\Projects\WeBukovel\scss/global/normalize */
-button, select {
-  text-transform: none; }
-
-/* line 162, D:\Projects\WeBukovel\scss/global/normalize */
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
-
-/* line 168, D:\Projects\WeBukovel\scss/global/normalize */
-button[disabled], html input[disabled] {
-  cursor: default; }
-
-/* line 173, D:\Projects\WeBukovel\scss/global/normalize */
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/* line 178, D:\Projects\WeBukovel\scss/global/normalize */
-input {
-  line-height: normal; }
-
-/* line 183, D:\Projects\WeBukovel\scss/global/normalize */
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
-
-/* line 189, D:\Projects\WeBukovel\scss/global/normalize */
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/* line 193, D:\Projects\WeBukovel\scss/global/normalize */
-input[type="search"] {
-  -webkit-appearance: textfield; }
-
-/* line 198, D:\Projects\WeBukovel\scss/global/normalize */
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/* line 202, D:\Projects\WeBukovel\scss/global/normalize */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/* line 208, D:\Projects\WeBukovel\scss/global/normalize */
-legend {
-  border: 0;
-  padding: 0; }
-
-/* line 213, D:\Projects\WeBukovel\scss/global/normalize */
-textarea {
-  overflow: auto; }
-
-/* line 217, D:\Projects\WeBukovel\scss/global/normalize */
-optgroup {
-  font-weight: bold; }
-
-/* line 221, D:\Projects\WeBukovel\scss/global/normalize */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* line 227, D:\Projects\WeBukovel\scss/global/normalize */
-td, th {
-  padding: 0; }
-
-@media print {
-  /* line 236, D:\Projects\WeBukovel\scss/global/normalize */
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important; }
-
-  /* line 244, D:\Projects\WeBukovel\scss/global/normalize */
-  a, a:visited {
-    text-decoration: underline; }
-
-  /* line 248, D:\Projects\WeBukovel\scss/global/normalize */
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-
-  /* line 252, D:\Projects\WeBukovel\scss/global/normalize */
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-
-  /* line 258, D:\Projects\WeBukovel\scss/global/normalize */
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""; }
-
-  /* line 263, D:\Projects\WeBukovel\scss/global/normalize */
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-
-  /* line 268, D:\Projects\WeBukovel\scss/global/normalize */
-  thead {
-    display: table-header-group; }
-
-  /* line 273, D:\Projects\WeBukovel\scss/global/normalize */
-  tr, img {
-    page-break-inside: avoid; }
-
-  /* line 277, D:\Projects\WeBukovel\scss/global/normalize */
-  img {
-    max-width: 100% !important; }
-
-  @page {
-    margin: 0.5cm; }
-
-  /* line 287, D:\Projects\WeBukovel\scss/global/normalize */
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3; }
-
-  /* line 293, D:\Projects\WeBukovel\scss/global/normalize */
-  h2, h3 {
-    page-break-after: avoid; }
- }
-
-/* line 13, D:\Projects\WeBukovel\scss/global/helpers */
-.wrap:after, .cf:after, .clearfix:after, .content:after, .intro__timer-hint:after, .speakers-list:after, .speaker dl:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* line 27, D:\Projects\WeBukovel\scss/global/helpers */
-.typography code {
-  word-wrap: break-word;
-  overflow-wrap: breakword; }
-
-/* line 42, D:\Projects\WeBukovel\scss/global/helpers */
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative; }
-
-@keyframes bounce {
-  /* line 282, D:\Projects\WeBukovel\scss/global/helpers */
-  0%, 20%, 53%, 80%, 100% {
-    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    transform: translate3d(0, 0, 0); }
-
-  /* line 287, D:\Projects\WeBukovel\scss/global/helpers */
-  40%, 43% {
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -30px, 0); }
-
-  /* line 292, D:\Projects\WeBukovel\scss/global/helpers */
-  70% {
-    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    transform: translate3d(0, -15px, 0); }
-
-  /* line 297, D:\Projects\WeBukovel\scss/global/helpers */
-  90% {
-    transform: translate3d(0, -4px, 0); } }
-
-/* line 7, D:\Projects\WeBukovel\scss/global/typography */
-html {
-  font-size: 0.875em; }
-
-/* line 11, D:\Projects\WeBukovel\scss/global/typography */
-body {
-  line-height: 1.25;
-  font-family: 'Blogger Sans Medium', Tahoma, Geneva, sans-serif; }
-
-/* line 20, D:\Projects\WeBukovel\scss/global/typography */
-html, button, input, select, textarea {
-  color: #1b2f4c; }
-
-/* line 132, D:\Projects\WeBukovel\scss/global/helpers */
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  font-size: 1em;
-  color: #284672; }
-/* line 132, D:\Projects\WeBukovel\scss/global/helpers */
-input::-moz-placeholder, textarea::-moz-placeholder {
-  font-size: 1em;
-  color: #284672; }
-/* line 132, D:\Projects\WeBukovel\scss/global/helpers */
-input:-moz-placeholder, textarea:-moz-placeholder {
-  font-size: 1em;
-  color: #284672; }
-/* line 132, D:\Projects\WeBukovel\scss/global/helpers */
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-size: 1em;
-  color: #284672; }
-
-/* line 33, D:\Projects\WeBukovel\scss/global/typography */
-a, .link {
-  color: #00a8ff;
-  transition: color 0.15s ease; }
-  /* line 37, D:\Projects\WeBukovel\scss/global/typography */
-  a:hover, .link:hover {
-    text-decoration: none; }
-  /* line 41, D:\Projects\WeBukovel\scss/global/typography */
-  a:active, .link:active {
-    color: #ff5700; }
-
-/* line 46, D:\Projects\WeBukovel\scss/global/typography */
-.link:active {
-  color: #ff5700 !important; }
-
-@font-face {
-  font-family: 'Blogger Sans Light';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/light/BloggerSans-Light.eot');
-  src: url('fonts/light/BloggerSans-Light.eot?#iefix') format('embedded-opentype'), url('fonts/light/BloggerSans-Light.woff') format('woff'), url('fonts/light/BloggerSans-Light.ttf') format('truetype'), url('fonts/light/BloggerSans-Light.svg#Blogger Sans Light') format('svg'); }
-
-@font-face {
-  font-family: 'Blogger Sans Medium';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/medium/BloggerSans-Medium.eot');
-  src: url('fonts/medium/BloggerSans-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/medium/BloggerSans-Medium.woff') format('woff'), url('fonts/medium/BloggerSans-Medium.ttf') format('truetype'), url('fonts/medium/BloggerSans-Medium.svg#Blogger Sans Medium') format('svg'); }
-
-/* line 62, D:\Projects\WeBukovel\scss/global/typography */
-.typography > :first-child {
-  margin-top: 0; }
-/* line 66, D:\Projects\WeBukovel\scss/global/typography */
-.typography > :last-child {
-  margin-bottom: 0; }
-/* line 70, D:\Projects\WeBukovel\scss/global/typography */
-.typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
-  margin: 1em 0; }
-/* line 75, D:\Projects\WeBukovel\scss/global/typography */
-.typography ol, .typography ul {
-  margin: 1em 0;
-  padding-left: 2.85714em; }
-/* line 80, D:\Projects\WeBukovel\scss/global/typography */
-.typography ol {
-  list-style-type: decimal; }
-/* line 84, D:\Projects\WeBukovel\scss/global/typography */
-.typography ul {
-  list-style-type: disc; }
-  /* line 87, D:\Projects\WeBukovel\scss/global/typography */
-  .typography ul ul {
-    list-style-type: circle; }
-/* line 92, D:\Projects\WeBukovel\scss/global/typography */
-.typography li {
-  margin-top: 0.71429em; }
-  /* line 95, D:\Projects\WeBukovel\scss/global/typography */
-  .typography li:first-child {
-    margin-top: 0; }
-/* line 102, D:\Projects\WeBukovel\scss/global/typography */
-.typography p, .typography dl, .typography figure {
-  margin: 1em 0; }
-/* line 106, D:\Projects\WeBukovel\scss/global/typography */
-.typography dt {
-  margin-top: 0.71429em;
-  font-weight: 700; }
-  /* line 110, D:\Projects\WeBukovel\scss/global/typography */
-  .typography dt:first-child {
-    margin-top: 0; }
-/* line 115, D:\Projects\WeBukovel\scss/global/typography */
-.typography blockquote {
-  font-style: italic;
-  border-left: 0.07143em solid #1b2f4c;
-  padding-left: 1em;
-  margin: 1em 0; }
-/* line 122, D:\Projects\WeBukovel\scss/global/typography */
-.typography pre {
-  margin: 1em 0; }
-/* line 126, D:\Projects\WeBukovel\scss/global/typography */
-.typography code {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  font-size: 0.8em;
-  white-space: pre;
-  white-space: pre-wrap;
-  white-space: pre-line;
-  padding: 0.35714em 0.71429em;
-  color: #4e4e4e;
-  background-color: #f5f2f0; }
-/* line 140, D:\Projects\WeBukovel\scss/global/typography */
-.typography i, .typography em, .typography cite {
-  font-style: italic; }
-/* line 144, D:\Projects\WeBukovel\scss/global/typography */
-.typography abbr {
-  text-transform: uppercase;
-  border-bottom: 0.07143em dotted #1b2f4c; }
-/* line 149, D:\Projects\WeBukovel\scss/global/typography */
-.typography small {
-  font-size: 80%; }
-/* line 154, D:\Projects\WeBukovel\scss/global/typography */
-.typography b, .typography strong {
-  font-weight: 700; }
-/* line 158, D:\Projects\WeBukovel\scss/global/typography */
-.typography img {
-  margin: 1em 0; }
-/* line 162, D:\Projects\WeBukovel\scss/global/typography */
-.typography hr {
-  height: 0.07143em;
-  border: none;
-  margin: 1em 0;
-  background-color: #1b2f4c; }
-/* line 169, D:\Projects\WeBukovel\scss/global/typography */
-.typography table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  border: 0.07143em solid #1b2f4c;
-  width: 100%;
-  margin: 1em 0; }
-/* line 178, D:\Projects\WeBukovel\scss/global/typography */
-.typography th, .typography td {
-  text-align: left;
-  border: 0.07143em solid #1b2f4c;
-  padding: 0.71429em; }
-/* line 184, D:\Projects\WeBukovel\scss/global/typography */
-.typography th {
-  font-weight: 700; }
-
-/* line 7, D:\Projects\WeBukovel\scss/global/base */
-html {
-  height: 100%; }
-
-/* line 11, D:\Projects\WeBukovel\scss/global/base */
-body {
-  height: 100%;
-  min-width: 72.85714em;
-  margin: 0 auto;
-  background-color: #fff; }
-
-/* line 50, D:\Projects\WeBukovel\scss/global/base */
-p {
-  margin: 0 0 1em 0; }
-
-/* line 64, D:\Projects\WeBukovel\scss/global/base */
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-/* line 82, D:\Projects\WeBukovel\scss/global/base */
-figure {
-  margin: 0; }
-
-/* line 98, D:\Projects\WeBukovel\scss/global/base */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1em 0;
-  line-height: 1.1;
-  color: #000;
-  font-weight: 400;
-  text-transform: uppercase; }
-
-/* line 110, D:\Projects\WeBukovel\scss/global/base */
-a {
-  text-decoration: none; }
-
-/* line 121, D:\Projects\WeBukovel\scss/global/base */
-strong {
-  font-weight: 400; }
-
-/* line 131, D:\Projects\WeBukovel\scss/global/base */
-cite {
-  font-style: normal; }
-
-/* line 172, D:\Projects\WeBukovel\scss/global/base */
-b {
-  font-weight: 400; }
-
-/* line 220, D:\Projects\WeBukovel\scss/global/base */
-img, embed, object, video {
-  max-width: 100%;
-  height: auto; }
-
-/* line 229, D:\Projects\WeBukovel\scss/global/base */
-img {
-  vertical-align: middle; }
-
-/* line 279, D:\Projects\WeBukovel\scss/global/base */
-input, button, textarea, select {
-  outline: none;
-  border: none; }
-  /* line 283, D:\Projects\WeBukovel\scss/global/base */
-  input:focus, button:focus, textarea:focus, select:focus {
-    outline: none; }
-
-/* line 289, D:\Projects\WeBukovel\scss/global/base */
-button, input[type="button"] {
-  padding: 0;
-  border: none; }
-
-/* line 294, D:\Projects\WeBukovel\scss/global/base */
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0; }
-
-/* line 300, D:\Projects\WeBukovel\scss/global/base */
-textarea {
-  resize: vertical; }
-
-/* line 353, D:\Projects\WeBukovel\scss/global/base */
-table {
-  width: 100%; }
-
-/* line 7, D:\Projects\WeBukovel\scss/global/general */
-.page {
-  display: table;
-  width: 100%;
-  height: 100%; }
-
-/* line 13, D:\Projects\WeBukovel\scss/global/general */
-.wrap {
-  max-width: 72.85714em;
-  padding: 0 0.71429em;
-  margin: 0 auto; }
-
-/* line 26, D:\Projects\WeBukovel\scss/global/general */
-.push {
-  margin: 24px !important; }
-
-/* line 27, D:\Projects\WeBukovel\scss/global/general */
-.push--top {
-  margin-top: 24px !important; }
-
-/* line 28, D:\Projects\WeBukovel\scss/global/general */
-.push--right {
-  margin-right: 24px !important; }
-
-/* line 29, D:\Projects\WeBukovel\scss/global/general */
-.push--bottom {
-  margin-bottom: 24px !important; }
-
-/* line 30, D:\Projects\WeBukovel\scss/global/general */
-.push--left {
-  margin-left: 24px !important; }
-
-/* line 31, D:\Projects\WeBukovel\scss/global/general */
-.push--ends {
-  margin-top: 24px !important;
-  margin-bottom: 24px !important; }
-
-/* line 32, D:\Projects\WeBukovel\scss/global/general */
-.push--sides {
-  margin-right: 24px !important;
-  margin-left: 24px !important; }
-
-/* line 34, D:\Projects\WeBukovel\scss/global/general */
-.push-half {
-  margin: 12px !important; }
-
-/* line 35, D:\Projects\WeBukovel\scss/global/general */
-.push-half--top {
-  margin-top: 12px !important; }
-
-/* line 36, D:\Projects\WeBukovel\scss/global/general */
-.push-half--right {
-  margin-right: 12px !important; }
-
-/* line 37, D:\Projects\WeBukovel\scss/global/general */
-.push-half--bottom {
-  margin-bottom: 12px !important; }
-
-/* line 38, D:\Projects\WeBukovel\scss/global/general */
-.push-half--left {
-  margin-left: 12px !important; }
-
-/* line 39, D:\Projects\WeBukovel\scss/global/general */
-.push-half--ends {
-  margin-top: 12px !important;
-  margin-bottom: 12px !important; }
-
-/* line 40, D:\Projects\WeBukovel\scss/global/general */
-.push-half--sides {
-  margin-right: 12px !important;
-  margin-left: 12px !important; }
-
-/* line 42, D:\Projects\WeBukovel\scss/global/general */
-.flush {
-  margin: 0 !important; }
-
-/* line 43, D:\Projects\WeBukovel\scss/global/general */
-.flush--top {
-  margin-top: 0 !important; }
-
-/* line 44, D:\Projects\WeBukovel\scss/global/general */
-.flush--right {
-  margin-right: 0 !important; }
-
-/* line 45, D:\Projects\WeBukovel\scss/global/general */
-.flush--bottom {
-  margin-bottom: 0 !important; }
-
-/* line 46, D:\Projects\WeBukovel\scss/global/general */
-.flush--left {
-  margin-left: 0 !important; }
-
-/* line 47, D:\Projects\WeBukovel\scss/global/general */
-.flush--ends {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important; }
-
-/* line 48, D:\Projects\WeBukovel\scss/global/general */
-.flush--sides {
-  margin-right: 0 !important;
-  margin-left: 0 !important; }
-
-/* line 52, D:\Projects\WeBukovel\scss/global/general */
-.soft {
-  padding: 24px !important; }
-
-/* line 53, D:\Projects\WeBukovel\scss/global/general */
-.soft--top {
-  padding-top: 24px !important; }
-
-/* line 54, D:\Projects\WeBukovel\scss/global/general */
-.soft--right {
-  padding-right: 24px !important; }
-
-/* line 55, D:\Projects\WeBukovel\scss/global/general */
-.soft--bottom {
-  padding-bottom: 24px !important; }
-
-/* line 56, D:\Projects\WeBukovel\scss/global/general */
-.soft--left {
-  padding-left: 24px !important; }
-
-/* line 57, D:\Projects\WeBukovel\scss/global/general */
-.soft--ends {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important; }
-
-/* line 58, D:\Projects\WeBukovel\scss/global/general */
-.soft--sides {
-  padding-right: 24px !important;
-  padding-left: 24px !important; }
-
-/* line 60, D:\Projects\WeBukovel\scss/global/general */
-.soft-half {
-  padding: 12px !important; }
-
-/* line 61, D:\Projects\WeBukovel\scss/global/general */
-.soft-half--top {
-  padding-top: 12px !important; }
-
-/* line 62, D:\Projects\WeBukovel\scss/global/general */
-.soft-half--right {
-  padding-right: 12px !important; }
-
-/* line 63, D:\Projects\WeBukovel\scss/global/general */
-.soft-half--bottom {
-  padding-bottom: 12px !important; }
-
-/* line 64, D:\Projects\WeBukovel\scss/global/general */
-.soft-half--left {
-  padding-left: 12px !important; }
-
-/* line 65, D:\Projects\WeBukovel\scss/global/general */
-.soft-half--ends {
-  padding-top: 12px !important;
-  padding-bottom: 12px !important; }
-
-/* line 66, D:\Projects\WeBukovel\scss/global/general */
-.soft-half--sides {
-  padding-right: 12px !important;
-  padding-left: 12px !important; }
-
-/* line 68, D:\Projects\WeBukovel\scss/global/general */
-.hard {
-  padding: 0 !important; }
-
-/* line 69, D:\Projects\WeBukovel\scss/global/general */
-.hard--top {
-  padding-top: 0 !important; }
-
-/* line 70, D:\Projects\WeBukovel\scss/global/general */
-.hard--right {
-  padding-right: 0 !important; }
-
-/* line 71, D:\Projects\WeBukovel\scss/global/general */
-.hard--bottom {
-  padding-bottom: 0 !important; }
-
-/* line 72, D:\Projects\WeBukovel\scss/global/general */
-.hard--left {
-  padding-left: 0 !important; }
-
-/* line 73, D:\Projects\WeBukovel\scss/global/general */
-.hard--ends {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important; }
-
-/* line 74, D:\Projects\WeBukovel\scss/global/general */
-.hard--sides {
-  padding-right: 0 !important;
-  padding-left: 0 !important; }
-
-/* line 85, D:\Projects\WeBukovel\scss/global/general */
-.clear {
-  display: block;
-  height: 0;
-  line-height: 0;
-  clear: both; }
-
-/* line 92, D:\Projects\WeBukovel\scss/global/general */
-.clear-b {
-  clear: both; }
-
-/* line 100, D:\Projects\WeBukovel\scss/global/general */
-.float-l {
-  float: left !important; }
-
-/* line 104, D:\Projects\WeBukovel\scss/global/general */
-.float-r {
-  float: right !important; }
-
-/* line 108, D:\Projects\WeBukovel\scss/global/general */
-.float-n {
-  float: none !important; }
-
-/* line 117, D:\Projects\WeBukovel\scss/global/general */
-.flex-video {
-  position: relative;
-  height: 0;
-  padding-bottom: 56.25%; }
-  /* line 122, D:\Projects\WeBukovel\scss/global/general */
-  .flex-video iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0; }
-
-/* line 135, D:\Projects\WeBukovel\scss/global/general */
-.hidden {
-  display: none !important; }
-
-/* line 139, D:\Projects\WeBukovel\scss/global/general */
-.invisible {
-  visibility: hidden; }
-
-/* line 147, D:\Projects\WeBukovel\scss/global/general */
-.frameless {
-  border: none !important; }
-  /* line 150, D:\Projects\WeBukovel\scss/global/general */
-  .frameless--top {
-    border-top: none !important; }
-  /* line 154, D:\Projects\WeBukovel\scss/global/general */
-  .frameless--right {
-    border-right: none !important; }
-  /* line 158, D:\Projects\WeBukovel\scss/global/general */
-  .frameless--bottom {
-    border-bottom: none !important; }
-  /* line 162, D:\Projects\WeBukovel\scss/global/general */
-  .frameless--left {
-    border-left: none !important; }
-
-/* line 171, D:\Projects\WeBukovel\scss/global/general */
-.align-l {
-  text-align: left !important; }
-
-/* line 175, D:\Projects\WeBukovel\scss/global/general */
-.align-r {
-  text-align: right !important; }
-
-/* line 179, D:\Projects\WeBukovel\scss/global/general */
-.align-c {
-  text-align: center !important; }
-
-/* line 187, D:\Projects\WeBukovel\scss/global/general */
-.font-light {
-  font-weight: 300 !important; }
-
-/* line 191, D:\Projects\WeBukovel\scss/global/general */
-.font-normal {
-  font-weight: 400 !important; }
-
-/* line 195, D:\Projects\WeBukovel\scss/global/general */
-.font-semibold {
-  font-weight: 600 !important; }
-
-/* line 199, D:\Projects\WeBukovel\scss/global/general */
-.font-bold {
-  font-weight: 700 !important; }
-
-/* line 209, D:\Projects\WeBukovel\scss/global/general */
-.text-primary {
-  color: #428bca !important; }
-
-/* line 213, D:\Projects\WeBukovel\scss/global/general */
-.text-success {
-  color: #428bca !important; }
-
-/* line 217, D:\Projects\WeBukovel\scss/global/general */
-.text-info {
-  color: #31708f !important; }
-
-/* line 221, D:\Projects\WeBukovel\scss/global/general */
-.text-warning {
-  color: #8a6d3b !important; }
-
-/* line 225, D:\Projects\WeBukovel\scss/global/general */
-.text-danger {
-  color: #a94442 !important; }
-
-/* line 229, D:\Projects\WeBukovel\scss/global/general */
-.text-error {
-  color: #e94442 !important; }
-
-/* line 234, D:\Projects\WeBukovel\scss/global/general */
-.bg-primary {
-  color: #fff !important;
-  background-color: #428bca; }
-
-/* line 239, D:\Projects\WeBukovel\scss/global/general */
-.bg-success {
-  background-color: #dff0d8 !important; }
-
-/* line 243, D:\Projects\WeBukovel\scss/global/general */
-.bg-info {
-  background-color: #d9edf7 !important; }
-
-/* line 247, D:\Projects\WeBukovel\scss/global/general */
-.bg-warning {
-  background-color: #fcf8e3 !important; }
-
-/* line 251, D:\Projects\WeBukovel\scss/global/general */
-.bg-danger {
-  background-color: #f2dede !important; }
-
-/* line 255, D:\Projects\WeBukovel\scss/global/general */
-.bg-error {
-  background-color: #ee6767 !important; }
-
-/* line 5, D:\Projects\WeBukovel\scss/modules/_buttons.scss */
-.btn {
-  background-color: #c20202;
-  position: relative;
-  display: inline-block;
-  padding: 0.7em 1.13333em 0.63333em 1.13333em;
-  margin-bottom: 0;
-  border: none;
-  border-radius: 0.35714em;
-  vertical-align: middle;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
-  color: #fff;
-  font-size: 2.14286em;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  text-decoration: none;
-  text-transform: uppercase;
-  user-select: none; }
-  /* line 208, D:\Projects\WeBukovel\scss/global/helpers */
-  .btn:hover:not(:disabled) {
-    text-decoration: none;
-    background-color: #e00000; }
-  /* line 233, D:\Projects\WeBukovel\scss/global/helpers */
-  .btn:active:not(:disabled) {
-    box-shadow: inset 0 1px 6px 2px #950000; }
-  /* line 26, D:\Projects\WeBukovel\scss/modules/_buttons.scss */
-  .btn:hover, .btn:active {
-    color: #fff; }
-  /* line 30, D:\Projects\WeBukovel\scss/modules/_buttons.scss */
-  .btn:focus {
-    outline: none; }
-  /* line 34, D:\Projects\WeBukovel\scss/modules/_buttons.scss */
-  .btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed; }
-  /* line 57, D:\Projects\WeBukovel\scss/modules/_buttons.scss */
-  .btn--full {
-    width: 100%; }
-  /* line 81, D:\Projects\WeBukovel\scss/modules/_buttons.scss */
-  .btn--hard {
-    border-radius: 0; }
-
-/* line 6, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-.input, .textarea {
-  border: 0.07143em solid #ccc;
-  background-color: #fff; }
-  /* line 10, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input:focus, .textarea:focus {
-    border-color: #66AFE9; }
-
-/* line 15, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-.input {
-  height: 2.85714em;
-  padding: 0.35714em 0.71429em;
-  width: 20em; }
-  /* line 21, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input--tiny {
-    width: 7.14286em; }
-  /* line 25, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input--small {
-    width: 10.71429em; }
-  /* line 29, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input--large {
-    width: 25em; }
-  /* line 33, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input--huge {
-    width: 28.57143em; }
-  /* line 37, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input--full {
-    width: 100%; }
-  /* line 47, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .input--hard {
-    border-radius: 0; }
-
-/* line 80, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-.textarea {
-  padding: 0.71429em 0.71429em 0.35714em 0.71429em;
-  display: block;
-  width: 30.71429em;
-  height: 8em; }
-
-/* line 88, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-.radio {
-  display: inline-block;
-  line-height: 1; }
-  /* line 92, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .radio input {
-    display: none; }
-  /* line 96, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .radio i {
-    margin-right: 0.85714em;
-    float: left; }
-
-/* line 108, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-.checkbox {
-  display: inline-block;
-  line-height: 1; }
-  /* line 112, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .checkbox input {
-    display: none; }
-  /* line 116, D:\Projects\WeBukovel\scss/modules/_form-elements.scss */
-  .checkbox i {
-    margin-right: 0.85714em;
-    float: left; }
-
-/* line 5, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-h1, .h1 {
-  font-size: 2.57143em; }
-
-/* line 9, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-h2, .h2 {
-  font-size: 2.28571em; }
-
-/* line 13, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-h3, .h3 {
-  font-size: 1.71429em; }
-
-/* line 17, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-h4, .h4 {
-  font-size: 1.28571em; }
-
-/* line 21, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-h5, .h5 {
-  font-size: 1.14286em; }
-
-/* line 25, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-h6, .h6 {
-  font-size: 1em; }
-
-/* line 29, D:\Projects\WeBukovel\scss/modules/_headings.scss */
-.headline {
-  padding: 1.04em 1em 1em 1em;
-  margin-bottom: 0.6em;
-  background-color: #00a8ff;
-  text-align: center;
-  color: #fff; }
-
-/* line 9, D:\Projects\WeBukovel\scss/modules/_icons.scss */
-.has-icon {
-  display: inline-block;
-  text-align: center;
-  font-size: 0;
-  line-height: 0;
-  white-space: nowrap; }
-  /* line 16, D:\Projects\WeBukovel\scss/modules/_icons.scss */
-  .has-icon:before {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 100%;
-    vertical-align: middle; }
-  /* line 24, D:\Projects\WeBukovel\scss/modules/_icons.scss */
-  .has-icon:after {
-    content: ''; }
-  /* line 29, D:\Projects\WeBukovel\scss/modules/_icons.scss */
-  .has-icon i, .has-icon:after {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle; }
-
-/* line 5, D:\Projects\WeBukovel\scss/modules/_modals.scss */
-.overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  transform: translateZ(0);
-  transition: all 0.3s ease;
-  overflow-y: auto;
-  text-align: center; }
-  /* line 17, D:\Projects\WeBukovel\scss/modules/_modals.scss */
-  .overlay:after {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%; }
-
-/* line 25, D:\Projects\WeBukovel\scss/modules/_modals.scss */
-.modal {
-  position: relative;
-  display: inline-block;
-  width: 35.71429em;
-  padding: 1.42857em 1.42857em 1.42857em 1.42857em;
-  margin: 1.42857em 0;
-  vertical-align: middle;
-  text-align: left;
-  background-color: #fff;
-  transition: all 0.3s ease; }
-  /* line 36, D:\Projects\WeBukovel\scss/modules/_modals.scss */
-  .modal__close-btn {
-    position: absolute;
-    top: 2.14286em;
-    right: 2.14286em; }
-
-/* line 5, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-.tabs {
-  font-size: 1.14286em;
-  margin-bottom: 1.25em;
-  color: #ccc;
-  text-align: center; }
-  /* line 11, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-  .tabs__item {
-    display: inline-block;
-    margin-left: 1.25em;
-    border: 0.0625em solid #ccc; }
-    /* line 16, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-    .tabs__item:first-child {
-      margin-left: 0; }
-    /* line 20, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-    .tabs__item:hover {
-      border-color: #ccc; }
-    /* line 24, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-    .tabs__item--active {
-      color: #b79d7d;
-      border-color: #b79d7e; }
-      /* line 28, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-      .tabs__item--active:hover {
-        border-color: #b79d7e; }
-  /* line 34, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-  .tabs__link {
-    display: block;
-    color: inherit;
-    padding: 0.3125em 0.625em; }
-    /* line 39, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-    .tabs__link:hover {
-      text-decoration: none; }
-  /* line 44, D:\Projects\WeBukovel\scss/modules/_navs.scss */
-  .tabs__item--active .tabs__link {
-    color: #b79d7d;
-    cursor: default; }
-
-/* line 5, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-.socials {
-  text-align: center; }
-  /* line 8, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-  .socials__btn {
-    background-image: url(../img/sprite.png);
-    background-position: -90px -118px;
-    width: 60px;
-    height: 60px;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 2em;
-    transition: box-shadow 0.25s ease;
-    border-radius: 50%; }
-    /* line 17, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .socials__btn:hover, .socials__btn:active {
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.65); }
-    /* line 21, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .socials__btn:first-child {
-      margin-left: 0; }
-    /* line 25, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .socials__btn--vk {
-      background-position: -210px -118px; }
-    /* line 29, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .socials__btn--tw {
-      background-position: -150px -118px; }
-
-/* line 36, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-.fixed-socials {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 90; }
-  /* line 42, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-  .fixed-socials__inner {
-    position: fixed;
-    transform: translateZ(0);
-    top: 50%;
-    margin-top: -204px;
-    margin-left: -0.6em; }
-  /* line 50, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-  .fixed-socials__arrow {
-    background-image: url(../img/sprite.png);
-    background-position: -37px -209px;
-    width: 37px;
-    height: 52px;
-    display: block;
-    margin: 0 auto 10px auto;
-    background-color: transparent;
-    transition: opacity 0.25s ease; }
-    /* line 58, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__arrow:hover, .fixed-socials__arrow:active {
-      opacity: 0.8; }
-    /* line 62, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__arrow--down {
-      background-position: 0px -209px;
-      margin-top: 10px; }
-  /* line 68, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-  .fixed-socials__btn {
-    background-image: url(../img/sprite.png);
-    background-position: 0px -118px;
-    width: 90px;
-    height: 91px;
-    display: block;
-    border-radius: 50%;
-    transition: box-shadow 0.4s ease; }
-    /* line 74, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__btn + .fixed-socials__btn {
-      margin-top: 5px; }
-    /* line 78, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__btn:first-child {
-      margin-left: 0; }
-    /* line 83, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__btn:hover, .fixed-socials__btn:active {
-      box-shadow: inset 0 0 0 60px rgba(0, 0, 0, 0.3); }
-    /* line 87, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__btn--fb {
-      background-position: -108px 0px; }
-    /* line 91, D:\Projects\WeBukovel\scss/modules/_socials.scss */
-    .fixed-socials__btn--tw {
-      background-position: -198px 0px; }
-
-/* line 8, D:\Projects\WeBukovel\scss/page/_content.scss */
-.middle {
-  display: table-row;
-  height: 100%; }
-
-/* line 13, D:\Projects\WeBukovel\scss/page/_content.scss */
-.content {
-  padding-top: 4.14286em; }
-
-/* line 22, D:\Projects\WeBukovel\scss/page/_content.scss */
-.intro {
-  background: #030509 url("../img/bg-intro.jpg") 50% 0 no-repeat; }
-  /* line 25, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro .wrap {
-    background: url("../img/bg-trees.png") 12px 100% no-repeat; }
-  /* line 29, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro__title {
-    float: left;
-    width: 31.3%;
-    margin-top: 6.375em;
-    padding-left: 0.16667em;
-    font-size: 1.71429em;
-    line-height: 1.22;
-    color: #fff;
-    text-align: center; }
-  /* line 40, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro .logo {
-    float: left;
-    margin-top: 0.35714em;
-    transition: opacity 0.3s ease; }
-    /* line 46, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro .logo:hover, .intro .logo:active {
-      opacity: 0.85; }
-  /* line 51, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro__register {
-    float: right;
-    margin-top: 11.5em;
-    padding-right: 1.35714em;
-    max-width: 29%; }
-    /* line 57, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro__register p {
-      margin-top: 0.875em;
-      padding-left: 0.33333em;
-      color: #fff;
-      font-size: 1.71429em; }
-    /* line 64, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro__register time:first-child {
-      margin-right: 0.33333em; }
-  /* line 69, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro__timer-box {
-    padding-bottom: 0.85714em;
-    color: #fff;
-    text-align: center; }
-    /* line 74, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro__timer-box strong {
-      position: relative;
-      top: -2px;
-      display: block;
-      font-size: 1.28571em;
-      line-height: 1;
-      text-transform: uppercase; }
-  /* line 84, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro__timer {
-    display: inline-block;
-    padding-top: 0.16667em;
-    font-size: 4.28571em;
-    line-height: 1;
-    white-space: nowrap; }
-    /* line 91, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro__timer span {
-      float: left;
-      width: 0.66667em;
-      height: 1.05em;
-      padding-top: 0.15em;
-      border-radius: 5px;
-      background-color: #000; }
-      /* line 102, D:\Projects\WeBukovel\scss/page/_content.scss */
-      .intro__timer span:nth-child(2), .intro__timer span:nth-child(5), .intro__timer span:nth-child(8), .intro__timer span:last-child {
-        margin-left: 0.1em; }
-      /* line 106, D:\Projects\WeBukovel\scss/page/_content.scss */
-      .intro__timer span:nth-child(5) ~ span {
-        position: relative;
-        top: 0.05em; }
-    /* line 112, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro__timer b {
-      position: relative;
-      bottom: 0.03333em;
-      float: left;
-      margin: 0 -0.03333em; }
-  /* line 120, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .intro__timer-hint {
-    margin: 0 auto;
-    width: 21em;
-    line-height: 1;
-    font-size: 1.28571em; }
-    /* line 127, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .intro__timer-hint span {
-      float: left;
-      width: 25%; }
-
-/* line 138, D:\Projects\WeBukovel\scss/page/_content.scss */
-.map {
-  position: relative; }
-  /* line 141, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .map__inner {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -35.71429em;
-    width: 71.42857em;
-    z-index: 10; }
-  /* line 150, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .map__hint {
-    position: absolute;
-    right: 4.5em;
-    bottom: 2.28571em;
-    width: 18.57143em;
-    padding: 2.45em 1em 2.65em 1em;
-    background-color: #fff;
-    border-radius: 0.57143em;
-    text-align: center;
-    color: #000; }
-    /* line 161, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .map__hint h3 {
-      margin-bottom: -1px;
-      color: #c20202;
-      font-size: 1.28571em;
-      line-height: 1.2;
-      text-transform: none; }
-    /* line 169, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .map__hint p {
-      font-family: 'Blogger Sans Light'; }
-
-/* line 175, D:\Projects\WeBukovel\scss/page/_content.scss */
-#map {
-  height: 530px; }
-
-/* line 183, D:\Projects\WeBukovel\scss/page/_content.scss */
-.speakers {
-  padding-bottom: 1.3em;
-  background: url("../img/bg-snowstar.png") 50% 51.5% no-repeat; }
-
-/* line 188, D:\Projects\WeBukovel\scss/page/_content.scss */
-.speakers-list {
-  margin-top: 5.28571em; }
-
-/* line 193, D:\Projects\WeBukovel\scss/page/_content.scss */
-.speaker {
-  float: left;
-  width: 26%;
-  margin-left: 6.8%;
-  margin-bottom: 2%;
-  text-align: center; }
-  /* line 200, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker:nth-child(3n+1) {
-    margin-left: 4.2%;
-    clear: left; }
-  /* line 205, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker--large {
-    display: inline-block;
-    width: 30%;
-    margin-left: 2.8%;
-    margin-right: 2.8%;
-    float: none;
-    vertical-align: top; }
-    /* line 213, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .speaker--large:nth-child(3n+1) {
-      margin-left: 2.8%; }
-  /* line 218, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker__img-box {
-    position: relative; }
-    /* line 221, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .speaker__img-box div {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 10;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      cursor: pointer; }
-      /* line 233, D:\Projects\WeBukovel\scss/page/_content.scss */
-      .speaker__img-box div:hover, .speaker__img-box div:active {
-        opacity: 1; }
-  /* line 239, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker img {
-    border-radius: 0.57143em; }
-  /* line 243, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker h3 {
-    margin-top: 0.55em;
-    margin-bottom: 0.15em;
-    font-size: 1.28571em; }
-  /* line 249, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker--large h3 {
-    margin-top: 1.05em;
-    margin-bottom: 0.2em; }
-  /* line 254, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker strong {
-    display: block;
-    margin-bottom: 0.1em;
-    color: #c20202; }
-  /* line 260, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker--large strong {
-    margin-bottom: 0.05em;
-    color: #00a8ff; }
-  /* line 266, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker p, .speaker ul {
-    font-family: 'Blogger Sans Light'; }
-  /* line 270, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker figcaption {
-    padding: 0 1em; }
-  /* line 274, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker dl {
-    text-align: center; }
-  /* line 280, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker dt, .speaker dd {
-    display: inline;
-    margin: 0; }
-  /* line 285, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .speaker a {
-    color: #1b2f4c; }
-    /* line 289, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .speaker a:hover, .speaker a:active {
-      color: #00a8ff; }
-
-/* line 299, D:\Projects\WeBukovel\scss/page/_content.scss */
-.support {
-  background: url("../img/bg-laptop.png") 50% 48% no-repeat; }
-  /* line 302, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .support__item {
-    margin-bottom: 7.35em;
-    font-family: 'Blogger Sans Light';
-    text-align: center; }
-    /* line 307, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__item h3 {
-      padding-top: 0.14em;
-      margin-bottom: 0.65em;
-      font-family: 'Blogger Sans Medium'; }
-    /* line 313, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__item + .support__item {
-      margin-bottom: 7.7em; }
-      /* line 316, D:\Projects\WeBukovel\scss/page/_content.scss */
-      .support__item + .support__item h3 {
-        margin-bottom: 0.15em;
-        padding-top: 0.1em; }
-  /* line 323, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .support__logo {
-    display: inline-block;
-    vertical-align: top;
-    transition: transform 0.25s ease; }
-    /* line 329, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo:hover, .support__logo:active {
-      transform: translateY(0.3em); }
-    /* line 333, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--google {
-      margin-top: 4.85em;
-      margin-left: 1.4em; }
-    /* line 338, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--java {
-      margin-left: 8.3em;
-      margin-top: 2.3em; }
-    /* line 343, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--oracle {
-      margin-top: 3.85em;
-      margin-left: 3.2em; }
-    /* line 348, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--opower {
-      margin: 2.95em 0px -4.5em 0.4em; }
-    /* line 352, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--cloud {
-      margin-right: 23.25em;
-      position: relative;
-      right: 4.8em; }
-    /* line 358, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--github {
-      margin-top: 3.6em; }
-    /* line 362, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .support__logo--ruby {
-      margin-top: -0.4em;
-      margin-right: 0.8em; }
-
-/* line 373, D:\Projects\WeBukovel\scss/page/_content.scss */
-.initiators {
-  background: url("../img/bg-glasses.png") 50.7% 55.3% no-repeat; }
-  /* line 376, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .initiators .speakers-list {
-    margin-top: 6.7em; }
-  /* line 380, D:\Projects\WeBukovel\scss/page/_content.scss */
-  .initiators__text {
-    margin-top: 3.9em;
-    text-align: center;
-    font-size: 1.71429em;
-    color: #00a8ff;
-    text-transform: uppercase; }
-    /* line 387, D:\Projects\WeBukovel\scss/page/_content.scss */
-    .initiators__text i {
-      background-image: url(../img/sprite.png);
-      background-position: 0px 0px;
-      width: 108px;
-      height: 118px;
-      position: relative;
-      left: 0.20833em;
-      margin: 0 auto 0.65em auto;
-      display: block; }
-
-/* line 7, D:\Projects\WeBukovel\scss/page/_footer.scss */
-.footer {
-  display: table-row;
-  height: 1px; }
-  /* line 11, D:\Projects\WeBukovel\scss/page/_footer.scss */
-  .footer .wrap {
-    position: relative;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
-    background: url("../img/bg-trees-blue.png") 12px 100% no-repeat; }
-
-/* line 7, D:\Projects\WeBukovel\scss/page/_header.scss */
-.header {
-  display: table-row;
-  height: 1px; }
-
-/* line 16, D:\Projects\WeBukovel\scss/page/_header.scss */
-.fixed-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 90;
-  padding-top: 1.35714em;
-  padding-bottom: 0.15em;
-  background-color: #00a8ff; }
-
-/* line 27, D:\Projects\WeBukovel\scss/page/_header.scss */
-.nav {
-  text-align: justify; }
-  /* line 30, D:\Projects\WeBukovel\scss/page/_header.scss */
-  .nav:after {
-    content: '';
-    display: inline-block;
-    width: 100%; }
-  /* line 36, D:\Projects\WeBukovel\scss/page/_header.scss */
-  .nav__item {
-    display: inline-block; }
-  /* line 40, D:\Projects\WeBukovel\scss/page/_header.scss */
-  .nav__link {
-    color: #fff;
-    font-size: 1.28571em; }
-    /* line 46, D:\Projects\WeBukovel\scss/page/_header.scss */
-    .active .nav__link, .nav__link:hover, .nav__link:active {
-      color: #000; }
-
-.map img {
-  max-width: none;
-}
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background-color:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-size:1em;font-family:monospace,monospace}
+button,input,optgroup,select,textarea{margin:0;color:inherit;font:inherit}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0}
+input{line-height:normal}
+input[type=checkbox],input[type=radio]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
+input[type=search]{-webkit-appearance:textfield}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+legend{padding:0;border:0}
+textarea{overflow:auto}
+optgroup{font-weight:700}
+table{border-spacing:0;border-collapse:collapse}
+td,th{padding:0}
+.cf:after,.clearfix:after,.content:after,.intro__timer-hint:after,.speaker dl:after,.speakers-list:after,.wrap:after{display:table;clear:both;content:""}
+.typography code{word-wrap:break-word;overflow-wrap:breakword}
+.icon{position:relative;display:inline-block;vertical-align:middle}
+html{font-size:.875em}
+body{font-family:"Blogger Sans Medium",Tahoma,Geneva,sans-serif;line-height:1.25}
+button,html,input,select,textarea{color:#1b2f4c}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#284672;font-size:1em}
+input::-moz-placeholder,textarea::-moz-placeholder{color:#284672;font-size:1em}
+input:-moz-placeholder,textarea:-moz-placeholder{color:#284672;font-size:1em}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#284672;font-size:1em}
+.link,a{color:#00a8ff;-webkit-transition:color .15s ease;transition:color .15s ease}
+.link:hover,a:hover{text-decoration:none}
+.link:active,a:active{color:#ff5700}
+.link:active{color:#ff5700!important}
+@font-face{font-weight:400;font-style:normal;font-family:"Blogger Sans Light";src:url(fonts/light/BloggerSans-Light.eot);src:url(fonts/light/BloggerSans-Light.eot?#iefix) format("embedded-opentype"),url(fonts/light/BloggerSans-Light.woff) format("woff"),url(fonts/light/BloggerSans-Light.ttf) format("truetype"),url("fonts/light/BloggerSans-Light.svg#Blogger Sans Light") format("svg")}
+@font-face{font-weight:400;font-style:normal;font-family:"Blogger Sans Medium";src:url(fonts/medium/BloggerSans-Medium.eot);src:url(fonts/medium/BloggerSans-Medium.eot?#iefix) format("embedded-opentype"),url(fonts/medium/BloggerSans-Medium.woff) format("woff"),url(fonts/medium/BloggerSans-Medium.ttf) format("truetype"),url("fonts/medium/BloggerSans-Medium.svg#Blogger Sans Medium") format("svg")}
+.typography>:first-child{margin-top:0}
+.typography>:last-child{margin-bottom:0}
+.typography h1,.typography h2,.typography h3,.typography h4,.typography h5,.typography h6{margin:1em 0}
+.typography ol,.typography ul{margin:1em 0;padding-left:2.85714em}
+.typography ol{list-style-type:decimal}
+.typography ul{list-style-type:disc}
+.typography ul ul{list-style-type:circle}
+.typography li{margin-top:.71429em}
+.typography li:first-child{margin-top:0}
+.typography dl,.typography figure,.typography p{margin:1em 0}
+.typography dt{margin-top:.71429em;font-weight:700}
+.typography dt:first-child{margin-top:0}
+.typography blockquote{margin:1em 0;padding-left:1em;border-left:.07143em solid #1b2f4c;font-style:italic}
+.typography pre{margin:1em 0}
+.typography code{padding:.35714em .71429em;background-color:#f5f2f0;color:#4e4e4e;white-space:pre;white-space:pre-wrap;white-space:pre-line;font-size:.8em;font-family:Consolas,Monaco,"Andale Mono",monospace}
+.typography cite,.typography em,.typography i{font-style:italic}
+.typography abbr{border-bottom:.07143em dotted #1b2f4c;text-transform:uppercase}
+.typography small{font-size:80%}
+.typography b,.typography strong{font-weight:700}
+.typography img{margin:1em 0}
+.typography hr{margin:1em 0;height:.07143em;border:none;background-color:#1b2f4c}
+.typography table{margin:1em 0;width:100%;border:.07143em solid #1b2f4c;border-spacing:0;border-collapse:collapse}
+.typography td,.typography th{padding:.71429em;border:.07143em solid #1b2f4c;text-align:left}
+.typography th{font-weight:700}
+html{height:100%}
+body{margin:0 auto;min-width:72.85714em;height:100%;background-color:#fff}
+p{margin:0 0 1em}
+ol,ul{margin:0;padding:0;list-style-type:none}
+figure{margin:0}
+h1,h2,h3,h4,h5,h6{margin:0 0 1em;color:#000;text-transform:uppercase;font-weight:400;line-height:1.1}
+a{text-decoration:none}
+strong{font-weight:400}
+cite{font-style:normal}
+b{font-weight:400}
+embed,img,object,video{max-width:100%;height:auto}
+img{vertical-align:middle}
+button,input,select,textarea{outline:0;border:none}
+button:focus,input:focus,select:focus,textarea:focus{outline:0}
+button,input[type=button]{padding:0;border:none}
+fieldset{margin:0;padding:0;border:0}
+textarea{resize:vertical}
+table{width:100%}
+.page{display:table;width:100%;height:100%}
+.wrap{margin:0 auto;padding:0 .71429em;max-width:72.85714em}
+.push{margin:24px!important}
+.push--top{margin-top:24px!important}
+.push--right{margin-right:24px!important}
+.push--bottom{margin-bottom:24px!important}
+.push--left{margin-left:24px!important}
+.push--ends{margin-top:24px!important;margin-bottom:24px!important}
+.push--sides{margin-right:24px!important;margin-left:24px!important}
+.push-half{margin:12px!important}
+.push-half--top{margin-top:12px!important}
+.push-half--right{margin-right:12px!important}
+.push-half--bottom{margin-bottom:12px!important}
+.push-half--left{margin-left:12px!important}
+.push-half--ends{margin-top:12px!important;margin-bottom:12px!important}
+.push-half--sides{margin-right:12px!important;margin-left:12px!important}
+.flush{margin:0!important}
+.flush--top{margin-top:0!important}
+.flush--right{margin-right:0!important}
+.flush--bottom{margin-bottom:0!important}
+.flush--left{margin-left:0!important}
+.flush--ends{margin-top:0!important;margin-bottom:0!important}
+.flush--sides{margin-right:0!important;margin-left:0!important}
+.soft{padding:24px!important}
+.soft--top{padding-top:24px!important}
+.soft--right{padding-right:24px!important}
+.soft--bottom{padding-bottom:24px!important}
+.soft--left{padding-left:24px!important}
+.soft--ends{padding-top:24px!important;padding-bottom:24px!important}
+.soft--sides{padding-right:24px!important;padding-left:24px!important}
+.soft-half{padding:12px!important}
+.soft-half--top{padding-top:12px!important}
+.soft-half--right{padding-right:12px!important}
+.soft-half--bottom{padding-bottom:12px!important}
+.soft-half--left{padding-left:12px!important}
+.soft-half--ends{padding-top:12px!important;padding-bottom:12px!important}
+.soft-half--sides{padding-right:12px!important;padding-left:12px!important}
+.hard{padding:0!important}
+.hard--top{padding-top:0!important}
+.hard--right{padding-right:0!important}
+.hard--bottom{padding-bottom:0!important}
+.hard--left{padding-left:0!important}
+.hard--ends{padding-top:0!important;padding-bottom:0!important}
+.hard--sides{padding-right:0!important;padding-left:0!important}
+.clear{display:block;clear:both;height:0;line-height:0}
+.clear-b{clear:both}
+.float-l{float:left!important}
+.float-r{float:right!important}
+.float-n{float:none!important}
+.flex-video{position:relative;padding-bottom:56.25%;height:0}
+.flex-video iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+.hidden{display:none!important}
+.invisible{visibility:hidden}
+.frameless{border:none!important}
+.frameless--top{border-top:none!important}
+.frameless--right{border-right:none!important}
+.frameless--bottom{border-bottom:none!important}
+.frameless--left{border-left:none!important}
+.align-l{text-align:left!important}
+.align-r{text-align:right!important}
+.align-c{text-align:center!important}
+.font-light{font-weight:300!important}
+.font-normal{font-weight:400!important}
+.font-semibold{font-weight:600!important}
+.font-bold{font-weight:700!important}
+.text-primary,.text-success{color:#428bca!important}
+.text-info{color:#31708f!important}
+.text-warning{color:#8a6d3b!important}
+.text-danger{color:#a94442!important}
+.text-error{color:#e94442!important}
+.bg-primary{background-color:#428bca;color:#fff!important}
+.bg-success{background-color:#dff0d8!important}
+.bg-info{background-color:#d9edf7!important}
+.bg-warning{background-color:#fcf8e3!important}
+.bg-danger{background-color:#f2dede!important}
+.bg-error{background-color:#ee6767!important}
+.btn{position:relative;display:inline-block;margin-bottom:0;padding:.7em 1.13333em .63333em;border:none;border-radius:.35714em;background-color:#c20202;color:#fff;vertical-align:middle;text-align:center;text-decoration:none;text-transform:uppercase;white-space:nowrap;font-size:2.14286em;line-height:1;cursor:pointer;-webkit-transition:background-color .25s ease;transition:background-color .25s ease;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.btn:hover:not(:disabled){background-color:#e00000;text-decoration:none}
+.btn:active:not(:disabled){-webkit-box-shadow:inset 0 1px 6px 2px #950000;box-shadow:inset 0 1px 6px 2px #950000}
+.btn:active,.btn:hover{color:#fff}
+.btn:focus{outline:0}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn--full{width:100%}
+.btn--hard{border-radius:0}
+.input,.textarea{border:.07143em solid #ccc;background-color:#fff}
+.input:focus,.textarea:focus{border-color:#66afe9}
+.input{padding:.35714em .71429em;width:20em;height:2.85714em}
+.input--tiny{width:7.14286em}
+.input--small{width:10.71429em}
+.input--large{width:25em}
+.input--huge{width:28.57143em}
+.input--full{width:100%}
+.input--hard{border-radius:0}
+.textarea{display:block;padding:.71429em .71429em .35714em;width:30.71429em;height:8em}
+.radio{display:inline-block;line-height:1}
+.radio input{display:none}
+.radio i{float:left;margin-right:.85714em}
+.checkbox{display:inline-block;line-height:1}
+.checkbox input{display:none}
+.checkbox i{float:left;margin-right:.85714em}
+.h1,h1{font-size:2.57143em}
+.h2,h2{font-size:2.28571em}
+.h3,h3{font-size:1.71429em}
+.h4,h4{font-size:1.28571em}
+.h5,h5{font-size:1.14286em}
+.h6,h6{font-size:1em}
+.headline{margin-bottom:.6em;padding:1.04em 1em 1em;background-color:#00a8ff;color:#fff;text-align:center}
+.has-icon{display:inline-block;text-align:center;white-space:nowrap;font-size:0;line-height:0}
+.has-icon:before{display:inline-block;width:0;height:100%;content:"";vertical-align:middle}
+.has-icon:after{content:""}
+.has-icon i,.has-icon:after{position:relative;display:inline-block;vertical-align:middle}
+.overlay{position:fixed;top:0;right:0;bottom:0;left:0;z-index:100;overflow-y:auto;text-align:center;-webkit-transition:all .3s ease;transition:all .3s ease;-webkit-transform:translateZ(0);transform:translateZ(0)}
+.overlay:after{display:inline-block;height:100%;content:"";vertical-align:middle}
+.modal{position:relative;display:inline-block;margin:1.42857em 0;padding:1.42857em;width:35.71429em;background-color:#fff;vertical-align:middle;text-align:left;-webkit-transition:all .3s ease;transition:all .3s ease}
+.modal__close-btn{position:absolute;top:2.14286em;right:2.14286em}
+.tabs{margin-bottom:1.25em;color:#ccc;text-align:center;font-size:1.14286em}
+.tabs__item{display:inline-block;margin-left:1.25em;border:.0625em solid #ccc}
+.tabs__item:first-child{margin-left:0}
+.tabs__item:hover{border-color:#ccc}
+.tabs__item--active{border-color:#b79d7e;color:#b79d7d}
+.tabs__item--active:hover{border-color:#b79d7e}
+.tabs__link{display:block;padding:.3125em .625em;color:inherit}
+.tabs__link:hover{text-decoration:none}
+.tabs__item--active .tabs__link{color:#b79d7d;cursor:default}
+.socials{text-align:center}
+.socials__btn{display:inline-block;margin-left:2em;width:60px;height:60px;border-radius:50%;background-image:url(../img/sprite.png);background-position:-90px -118px;vertical-align:top;-webkit-transition:-webkit-box-shadow .25s ease;transition:box-shadow .25s ease}
+.socials__btn:active,.socials__btn:hover{-webkit-box-shadow:1px 1px 5px rgba(0,0,0,.65);box-shadow:1px 1px 5px rgba(0,0,0,.65)}
+.socials__btn:first-child{margin-left:0}
+.socials__btn--vk{background-position:-210px -118px}
+.socials__btn--tw{background-position:-150px -118px}
+.fixed-socials{position:absolute;top:0;left:100%;z-index:90}
+.fixed-socials__inner{position:fixed;top:50%;margin-top:-204px;margin-left:-.6em;-webkit-transform:translateZ(0);transform:translateZ(0)}
+.fixed-socials__arrow{display:block;margin:0 auto 10px;width:37px;height:52px;background-color:transparent;background-image:url(../img/sprite.png);background-position:-37px -209px;-webkit-transition:opacity .25s ease;transition:opacity .25s ease}
+.fixed-socials__arrow:active,.fixed-socials__arrow:hover{opacity:.8}
+.fixed-socials__arrow--down{margin-top:10px;background-position:0 -209px}
+.fixed-socials__btn{display:block;width:90px;height:91px;border-radius:50%;background-image:url(../img/sprite.png);background-position:0 -118px;-webkit-transition:-webkit-box-shadow .4s ease;transition:box-shadow .4s ease}
+.fixed-socials__btn+.fixed-socials__btn{margin-top:5px}
+.fixed-socials__btn:first-child{margin-left:0}
+.fixed-socials__btn:active,.fixed-socials__btn:hover{-webkit-box-shadow:inset 0 0 0 60px rgba(0,0,0,.3);box-shadow:inset 0 0 0 60px rgba(0,0,0,.3)}
+.fixed-socials__btn--fb{background-position:-108px 0}
+.fixed-socials__btn--tw{background-position:-198px 0}
+.middle{display:table-row;height:100%}
+.content{padding-top:4.14286em}
+.intro{background:url(../img/bg-intro.jpg) 50% 0 no-repeat #030509}
+.intro .wrap{background:url(../img/bg-trees.png) 12px 100% no-repeat}
+.intro__title{float:left;margin-top:6.375em;padding-left:.16667em;width:31.3%;color:#fff;text-align:center;font-size:1.71429em;line-height:1.22}
+.intro .logo{float:left;margin-top:.35714em;-webkit-transition:opacity .3s ease;transition:opacity .3s ease}
+.intro .logo:active,.intro .logo:hover{opacity:.85}
+.intro__register{float:right;margin-top:11.5em;padding-right:1.35714em;max-width:29%}
+.intro__register p{margin-top:.875em;padding-left:.33333em;color:#fff;font-size:1.71429em}
+.intro__register time:first-child{margin-right:.33333em}
+.intro__timer-box{padding-bottom:.85714em;color:#fff;text-align:center}
+.intro__timer-box strong{position:relative;top:-2px;display:block;text-transform:uppercase;font-size:1.28571em;line-height:1}
+.intro__timer{display:inline-block;padding-top:.16667em;white-space:nowrap;font-size:4.28571em;line-height:1}
+.intro__timer span{float:left;padding-top:.15em;width:.66667em;height:1.05em;border-radius:5px;background-color:#000}
+.intro__timer span:last-child,.intro__timer span:nth-child(2),.intro__timer span:nth-child(5),.intro__timer span:nth-child(8){margin-left:.1em}
+.intro__timer span:nth-child(5)~span{position:relative;top:.05em}
+.intro__timer b{position:relative;bottom:.03333em;float:left;margin:0 -.03333em}
+.intro__timer-hint{margin:0 auto;width:21em;font-size:1.28571em;line-height:1}
+.intro__timer-hint span{float:left;width:25%}
+.map{position:relative}
+.map__inner{position:absolute;bottom:0;left:50%;z-index:10;margin-left:-35.71429em;width:71.42857em}
+.map__hint{position:absolute;right:4.5em;bottom:2.28571em;padding:2.45em 1em 2.65em;width:18.57143em;border-radius:.57143em;background-color:#fff;color:#000;text-align:center}
+.map__hint h3{margin-bottom:-1px;color:#c20202;text-transform:none;font-size:1.28571em;line-height:1.2}
+.map__hint p{font-family:"Blogger Sans Light"}
+#map{height:530px}
+.speakers{padding-bottom:1.3em;background:url(../img/bg-snowstar.png) 50% 51.5% no-repeat}
+.speakers-list{margin-top:5.28571em}
+.speaker{float:left;margin-bottom:2%;margin-left:6.8%;width:26%;text-align:center}
+.speaker:nth-child(3n+1){clear:left;margin-left:4.2%}
+.speaker--large{display:inline-block;float:none;margin-right:2.8%;margin-left:2.8%;width:30%;vertical-align:top}
+.speaker--large:nth-child(3n+1){margin-left:2.8%}
+.speaker__img-box{position:relative}
+.speaker__img-box div{position:absolute;top:0;right:0;bottom:0;left:0;z-index:10;opacity:0;cursor:pointer;-webkit-transition:opacity .3s ease;transition:opacity .3s ease}
+.speaker__img-box div:active,.speaker__img-box div:hover{opacity:1}
+.speaker img{border-radius:.57143em}
+.speaker h3{margin-top:.55em;margin-bottom:.15em;font-size:1.28571em}
+.speaker--large h3{margin-top:1.05em;margin-bottom:.2em}
+.speaker strong{display:block;margin-bottom:.1em;color:#c20202}
+.speaker--large strong{margin-bottom:.05em;color:#00a8ff}
+.speaker p,.speaker ul{font-family:"Blogger Sans Light"}
+.speaker figcaption{padding:0 1em}
+.speaker dl{text-align:center}
+.speaker dd,.speaker dt{display:inline;margin:0}
+.speaker a{color:#1b2f4c}
+.speaker a:active,.speaker a:hover{color:#00a8ff}
+.support{background:url(../img/bg-laptop.png) 50% 48% no-repeat}
+.support__item{margin-bottom:7.35em;text-align:center;font-family:"Blogger Sans Light"}
+.support__item h3{margin-bottom:.65em;padding-top:.14em;font-family:"Blogger Sans Medium"}
+.support__item+.support__item{margin-bottom:7.7em}
+.support__item+.support__item h3{margin-bottom:.15em;padding-top:.1em}
+.support__logo{display:inline-block;vertical-align:top;-webkit-transition:-webkit-transform .25s ease;transition:transform .25s ease}
+.support__logo:active,.support__logo:hover{-webkit-transform:translateY(0.3em);-ms-transform:translateY(0.3em);transform:translateY(0.3em)}
+.support__logo--google{margin-top:4.85em;margin-left:1.4em}
+.support__logo--java{margin-top:2.3em;margin-left:8.3em}
+.support__logo--oracle{margin-top:3.85em;margin-left:3.2em}
+.support__logo--opower{margin:2.95em 0 -4.5em .4em}
+.support__logo--cloud{position:relative;right:4.8em;margin-right:23.25em}
+.support__logo--github{margin-top:3.6em}
+.support__logo--ruby{margin-top:-.4em;margin-right:.8em}
+.initiators{background:url(../img/bg-glasses.png) 50.7% 55.3% no-repeat}
+.initiators .speakers-list{margin-top:6.7em}
+.initiators__text{margin-top:3.9em;color:#00a8ff;text-align:center;text-transform:uppercase;font-size:1.71429em}
+.initiators__text i{position:relative;left:.20833em;display:block;margin:0 auto .65em;width:108px;height:118px;background-image:url(../img/sprite.png);background-position:0 0}
+.footer{display:table-row;height:1px}
+.footer .wrap{position:relative;padding-top:.5em;padding-bottom:2em;background:url(../img/bg-trees-blue.png) 12px 100% no-repeat}
+.header{display:table-row;height:1px}
+.fixed-nav{position:fixed;top:0;right:0;left:0;z-index:90;padding-top:1.35714em;padding-bottom:.15em;background-color:#00a8ff}
+.nav{text-align:justify}
+.nav:after{display:inline-block;width:100%;content:""}
+.nav__item{display:inline-block}
+.nav__link{color:#fff;font-size:1.28571em}
+.active .nav__link,.nav__link:active,.nav__link:hover{color:#000}
+@media print{*{background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;color:#000!important;text-shadow:none!important}
+a,a:visited{text-decoration:underline}
+a[href]:after{content:" (" attr(href) ")"}
+abbr[title]:after{content:" (" attr(title) ")"}
+.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}
+blockquote,pre{border:1px solid #999;page-break-inside:avoid}
+thead{display:table-header-group}
+img,tr{page-break-inside:avoid}
+img{max-width:100%!important}
+h2,h3,p{orphans:3;widows:3}
+h2,h3{page-break-after:avoid}}
+@-webkit-keyframes bounce{0%,100%,20%,53%,80%{-webkit-transition-timing-function:cubic-bezier(0.215,.61,.355,1);transition-timing-function:cubic-bezier(0.215,.61,.355,1);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+40%,43%{-webkit-transition-timing-function:cubic-bezier(0.755,.05,.855,.06);transition-timing-function:cubic-bezier(0.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}
+70%{-webkit-transition-timing-function:cubic-bezier(0.755,.05,.855,.06);transition-timing-function:cubic-bezier(0.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}
+90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}
+@keyframes bounce{0%,100%,20%,53%,80%{-webkit-transition-timing-function:cubic-bezier(0.215,.61,.355,1);transition-timing-function:cubic-bezier(0.215,.61,.355,1);-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+40%,43%{-webkit-transition-timing-function:cubic-bezier(0.755,.05,.855,.06);transition-timing-function:cubic-bezier(0.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}
+70%{-webkit-transition-timing-function:cubic-bezier(0.755,.05,.855,.06);transition-timing-function:cubic-bezier(0.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}
+90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}
