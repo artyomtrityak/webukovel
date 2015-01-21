@@ -66,6 +66,10 @@ $(function(){
     offset: scrollOffset
   });
 
+  $(window).on('load', function(event) {
+    $('body').scrollspy('refresh');
+  });
+
   function getDocHeight() {
     var D = document;
     return Math.max(
