@@ -324,3 +324,7 @@ h2,h3{page-break-after:avoid}}
 40%,43%{-webkit-transition-timing-function:cubic-bezier(0.755,.05,.855,.06);transition-timing-function:cubic-bezier(0.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}
 70%{-webkit-transition-timing-function:cubic-bezier(0.755,.05,.855,.06);transition-timing-function:cubic-bezier(0.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}
 90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}
+
+.map img {
+  max-width: none;
+}
