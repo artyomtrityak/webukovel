@@ -82,33 +82,54 @@
       <div id="map"></div>
     </section>
 
-    <section class="content" style="text-align: center">
-<h3>Как добраться</h3>
-<h4>Автобусом или поездом</h4>
-<p>Автобусом или поездом Вам необходмо ехать в Ивано-Франковск, тернополь, Черновцы или Львов.</p>
+    <section class="route" id="route">
+      <h2 class="headline">Как добраться</h2>
+      <div class="wrap">
+        <ul class="route__items">
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-train.png" alt="ПОЕЗД"></div>
+            <dl class="route__info">
+              <dt>НА ПОЕЗДЕ</dt>
+              <dd>Ехать до городов: Ивано-Франковск, Львов, Тернополь или Черновцы</dd>
+            </dl>
+          </li>
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-airplane.png" alt="САМОЛЕТ"></div>
+            <dl class="route__info">
+              <dt>НА САМОЛЕТЕ</dt>
+              <dd>Лететь во Львов LWO либо Ивано-Франковск IFO</dd>
+            </dl>
+          </li>
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-bus.png" alt="АВТОБУС"></div>
+            <dl class="route__info">
+              <dt>НА АВТОБУСЕ</dt>
+              <dd><span>Ивано-Франковск -</span> ТК "Буковель" - 110 км</dd>
+              <dd><span>Львов -</span> ТК "Буковель" - 245км</dd>
+              <dd><span>Тернополь -</span> ТК "Буковель" - 250 км </dd>
+              <dd><span>Черновцы -</span> ТК "Буковель" - 160 км</dd>
+            </dl>
+          </li>
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-car.png" alt="МАШИНА"></div>
+            <dl class="route__info">
+              <dt>НА МАШИНЕ</dt>
+              <dd>Из других городов (кроме Черновцов и Ужгорода) ехать через <br>Ивано-Франковск, до ТК "Буковель" (110 км) через города <br>Надворная, Яремче, села Мыкулычин и Татаров.</dd>
+            </dl>
+          </li>
+        </ul>
 
+        <div class="route__coords">
+          <b>GPS</b>
+          <span>48.346438</span>
+          <span>24.445438</span>
+        </div>
 
-Ивано-Франковск - ТК "Буковель" - 110 км <br/>
-Львов - ТК "Буковель" - 245км <br/>
-Тернополь - ТК "Буковель" - 250 км <br/>
-Черновцы - ТК "Буковель" - 160 км <br/><br/>
-
-<h4>Собственным транспортом </h4>
-<p>Собственным траспортом с других городов Вам необходимо ехать в Ивано-Франковск (кроме Черновцов и Ужгорода).<br/>
-С Ивано-Франковська до ТК "Буковель" (110 км) через города Надворная, Яремче, села Мыкулычин, Татаров.
-</p>
-
-Gps-координаты курорта. <br>
-48.346438, 24.445438<br>
-
-Внимание! Сверьте указаны координаты с теми которые выбрал ваш навигатор. <br/> В Ивано-Франковской области два населенных пункта с названием Поляница (Паляница).<br><br>
-
-Самолетом<br>
-Самолетом Вам необходимо лететь в Ивано-Франковск или Львов
-<br><br><br><br>
-
-<h3><a href="http://bukovel.com/ru/cams/">Веб камеры</a></h3>
-<br><br>
+        <p class="route__warning"><strong>Внимание! Сверьте указаны координаты с теми которые выбрал ваш навигатор. <br>В Ивано-Франковской области два населенных пункта с названием Поляница (Паляница).</strong></p>
+        <div class="align-c push-half--bottom">
+          <a class="h3" href="http://bukovel.com/ru/cams/">Веб камеры</a>
+        </div>
+      </div>
     </section>
 
     <section class="speakers" id="speakers">
@@ -280,8 +301,10 @@ Gps-координаты курорта. <br>
 
     <section class="support" id="support">
       <h2 class="headline">ПОДДЕРЖКА</h2>
-      <h4 style="text-align:center; text-decoration: underline; margin-top:10px"><a href="Partnership_Proposal_WeBukovel_2015.pdf">Скачать партнерскую программу</a></h4>
       <div class="wrap">
+        <div class="align-c push--bottom">
+          <a class="support__btn" href="Partnership_Proposal_WeBukovel_2015.pdf" download>Скачать <br>партнерскую программу</a>
+        </div>
         <article class="support__item">
           <h3>НАШИ ПАРТНЕРЫ</h3>
           <ul class="support__logos">
@@ -302,31 +325,29 @@ Gps-координаты курорта. <br>
           <h3>НАШИ ДРУЗЬЯ</h3>
           <ul class="support__logos">
              <li>
-              <li>
               <a class="support__logo support__logo--opower" href="http://djinni.co/" target="_blank" style="height: 40px;">
                 <img src="img/djinni.png" alt="Анонимный поиск работы для разработчиков">
               </a>
               <a class="support__logo support__logo--java" href="http://www.it-sobytie.ru" target="_blank" style="width: 60px;">
-                <img src="img/it.jpg">
+                <img src="img/it.jpg" alt="IT-sobytie">
               </a>
               <a class="support__logo support__logo--java" href="http://indigo.co.ua/" target="_blank" style="width: 60px;">
-                <img src="img/indigo.png">
+                <img src="img/indigo.png" alt="Indigo">
               </a>
               <a class="support__logo support__logo--java" href="http://geekslab.co/" target="_blank" style="width: 100px;">
-                <img src="img/geekslab.png">
+                <img src="img/geekslab.png" alt="Geekslab">
               </a>
               <a class="support__logo support__logo--java" href="http://seleniumcamp.com/" target="_blank" style="width: 100px;">
-                <img src="img/seleniumcamp.png">
+                <img src="img/seleniumcamp.png" alt="SeleniumCamp">
               </a>
 
               <a class="support__logo support__logo--java" href="http://guid.com.ua/" target="_blank" style="width: 130px;">
-                <img src="img/guide.png">
+                <img src="img/guide.png" alt="GUID">
               </a>
 
               <a class="support__logo support__logo--java" href="http://www.itschool-hillel.org/" target="_blank" style="width: 130px;">
-                <img src="img/itschool.jpg">
+                <img src="img/itschool.jpg" alt="ITschool">
               </a>
-            </li>
             </li>
           </ul>
         </article>
