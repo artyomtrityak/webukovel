@@ -138,6 +138,10 @@
 .map {
   position: relative;
 
+  img {
+    max-width: none;
+  }
+
   &__inner {
     position: absolute;
     bottom: 0;
@@ -290,6 +294,29 @@
       color: $color-blue;
     }
   }
+
+  &__icon {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+    width: 74px;
+    height: 45px;
+    background: image-url('icon-pro.png') no-repeat;
+
+    &--md {
+      width: 56px;
+      height: 55px;
+      background: image-url('icon-mid.png') no-repeat;
+    }
+
+    &--rk {
+      width: 63px;
+      height: 63px;
+      background: image-url('icon-rookie.png') no-repeat;
+    }
+  }
 }
 
 
@@ -364,6 +391,29 @@
       margin-right: 0.8em;
     }
   }
+
+  &__btn {
+    padding: .65em .25em .55em;
+    border-radius: 8px;
+    background-color: #00a8ff;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.429em;
+    text-align: center;
+    line-height: 1.15;
+
+    &:hover {
+      background-color: #00a0f0;
+      color: #fff;
+    }
+
+    &:active {
+      -webkit-box-shadow: inset 0 1px 6px 2px #006ea6;
+      box-shadow: inset 0 1px 6px 2px #006ea6;
+      color: #fff;
+    }
+  }
 }
 
 
@@ -394,6 +444,100 @@
   }
 }
 
-.map img {
-  max-width: none;
+
+//======================================
+//   route
+//======================================
+.route {
+  padding-bottom: 1px;
+  background: image-url('bg-car.png') 50% 60.4% no-repeat;
+
+  .wrap {
+    position: relative;
+  }
+
+  .headline {
+    padding-top: 1.15em;
+    padding-bottom: .88em;
+  }
+
+  &__items {
+    padding: 1.429em 19em 1em 2.143em;
+    margin-bottom: 1.857em;
+  }
+
+  &__item {
+    margin-top: 1.857em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__img-box,
+  &__info {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__img-box {
+    width: 140px;
+    padding-right: 1em;
+  }
+
+  &__info {
+    padding-top: .286em;
+
+    dt {
+      text-transform: uppercase;
+      color: #00a8ff;
+      font-size: 1.286em;
+    }
+
+    dd {
+      margin: 0;
+      font-size: 1.286em;
+    }
+
+    span {
+      min-width: 8.444em;
+      display: inline-block;
+    }
+  }
+
+  &__warning {
+    text-align: center;
+    color: #c20202;
+    font-size: 1.286em;
+  }
+
+  &__coords {
+    position: absolute;
+    right: 71px;
+    bottom: 158px;
+    z-index: 1;
+    width: 180px;
+    height: 129px;
+    padding: 5.5em 1.071em .357em 5em;
+    background: image-url('gps-logo.png') no-repeat;
+    color: #fff;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+
+    b {
+      position: absolute;
+      bottom: .708em;
+      left: .667em;
+      font-size: 1.714em;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    span {
+      display: block;
+      text-align: right;
+      font-size: 1.286em;
+      line-height: 1.2;
+    }
+  }
 }
+

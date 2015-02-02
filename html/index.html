@@ -8,10 +8,12 @@
     <section class="intro" id="intro">
       <div class="wrap">
         <h1 class="intro__title">КОНФЕРЕНЦИЯ <br>ДЛЯ WEB-РАЗРАБОТЧИКОВ <br>В БУКОВЕЛЕ</h1>
-        <a href="" class="logo" title="WeBukovel"><img src="img/logo.png" alt="WeBukovel"></a>
+        <div class="logo" title="WeBukovel"><img src="img/logo.png" alt="WeBukovel" width="373" height="380"></div>
         <div class="intro__register">
-          <a href="" class="btn">Регистрация</a>
+          <a href="http://webukovel.ticketforevent.com/" class="btn">Регистрация</a>
+
           <p><time datetime="2015-02-28">28 февраля</time> - <time datetime="2015-03-01">1 марта</time></p>
+          <p>+препати 27 февраля</p>
         </div>
         <div class="clear"></div>
         <div class="intro__timer-box">
@@ -46,122 +48,285 @@
       <div id="map"></div>
     </section>
 
+    <section class="route" id="route">
+      <h2 class="headline">Как добраться</h2>
+      <div class="wrap">
+        <ul class="route__items">
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-train.png" alt="ПОЕЗД"></div>
+            <dl class="route__info">
+              <dt>НА ПОЕЗДЕ</dt>
+              <dd>Ехать до городов: Ивано-Франковск, Львов, Тернополь или Черновцы</dd>
+            </dl>
+          </li>
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-airplane.png" alt="САМОЛЕТ"></div>
+            <dl class="route__info">
+              <dt>НА САМОЛЕТЕ</dt>
+              <dd>Лететь во Львов LWO либо Ивано-Франковск IFO</dd>
+            </dl>
+          </li>
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-bus.png" alt="АВТОБУС"></div>
+            <dl class="route__info">
+              <dt>НА АВТОБУСЕ</dt>
+              <dd><span>Ивано-Франковск -</span> ТК "Буковель" - 110 км</dd>
+              <dd><span>Львов -</span> ТК "Буковель" - 245 км</dd>
+              <dd><span>Тернополь -</span> ТК "Буковель" - 250 км </dd>
+              <dd><span>Черновцы -</span> ТК "Буковель" - 160 км</dd>
+            </dl>
+          </li>
+          <li class="route__item">
+            <div class="route__img-box"><img src="img/icon-car.png" alt="МАШИНА"></div>
+            <dl class="route__info">
+              <dt>НА МАШИНЕ</dt>
+              <dd>Из других городов (кроме Черновцов и Ужгорода) ехать через <br>Ивано-Франковск, до ТК "Буковель" (110 км) через города <br>Надворная, Яремче, села Мыкулычин и Татаров.</dd>
+            </dl>
+          </li>
+        </ul>
+
+        <div class="route__coords">
+          <b>GPS</b>
+          <span>48.346438</span>
+          <span>24.445438</span>
+        </div>
+
+        <p class="route__warning"><strong>Внимание! Сверьте указаны координаты с теми которые выбрал ваш навигатор. <br>В Ивано-Франковской области два населенных пункта с названием Поляница (Паляница).</strong></p>
+        <div class="align-c push-half--bottom">
+          <a class="h3" href="http://bukovel.com/ru/cams/">Веб камеры</a>
+        </div>
+      </div>
+    </section>
+
     <section class="speakers" id="speakers">
       <h2 class="headline">ДОКЛАДЧИКИ</h2>
       <div class="wrap">
         <div class="speakers-list">
           <figure class="speaker">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-test.jpg" alt="ВЛАДИМИР МЕЛЬНИК">
-              <div><img src="img/temp/speaker-test-color.jpg" alt="ВЛАДИМИР МЕЛЬНИК"></div>
+              <img src="img/temp/vladimir_melnick.png" alt="ВЛАДИМИР МЕЛЬНИК" width="250" height="250">
+              <div><img src="img/temp/vladimir_melnick_color.png" alt="ВЛАДИМИР МЕЛЬНИК" width="250" height="250"></div>
+              <i class="speaker__icon"></i>
             </div>
             <figcaption>
               <h3>ВЛАДИМИР МЕЛЬНИК</h3>
-              <strong>SENIOR RUBY DEVELOPER в DataArt</strong>
-              <p>Расскажу о подходе именуемом DDD, Domain Model, некоторых архитектурных паттернах.а также о разработке DSL: зачем они необходимы, как сочетаются с DDD, приемы и рекомендации по разработке. Все это на Ruby.</p>
+              <strong>Domain-Driven Development &amp; Domain-Specific Languages in Ruby</strong>
+              <p>Расскажу о том, что такое DDD, почему этот подход хорош и какие сложности возникают с его внедрением. Расскажу пару примеров из жизни. Также расскажу о некоторых приемах разработки DSL на руби и зачем вообще необходима разработка DSL и как DSL соотносятся с DDD.</p>
             </figcaption>
           </figure>
+
           <figure class="speaker">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-2.jpg" alt="СТЕПАН СИДОРОВ">
-              <div><img src="img/temp/" alt="СТЕПАН СИДОРОВ"></div>
+              <img src="img/temp/volodymyr_hotsyk.png" alt="ВЛАДИМИР ГОЦИК" width="250" height="250">
+              <div><img src="img/temp/volodymyr_hotsyk_color.png" alt="ВЛАДИМИР ГОЦИК" width="250" height="250"></div>
+              <i class="speaker__icon speaker__icon--md"></i>
             </div>
             <figcaption>
-              <h3>СТЕПАН СИДОРОВ</h3>
-              <strong>ПРОГРАММИСТ</strong>
-              <p>В школьные годы занимался компьютерным программированием, разработал сетевую версию игры «Риск».</p>
+              <h3>ВЛАДИМИР ГОЦЫК</h3>
+              <strong>Getting maximum of Python, Django with Postgres 9.4</strong>
+              <p>Postgres предоставляет много встроенных возможностей для создания эфективных приложений, использующих базы данных. А в версии 9.4 появляется еще и JSONB поле, при правильном использовании которого, отпадает необходимость использвания NoSQL баз данных. В докладе рассмотрим, как использовать этот потенциал по максимуму в своих Python/Django приложениях.</p>
             </figcaption>
           </figure>
+
           <figure class="speaker">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-3.jpg" alt="ГЕОРГИЙ КРАСИВЫЙ">
-              <div><img src="img/temp/" alt="ГЕОРГИЙ КРАСИВЫЙ"></div>
+              <img src="img/temp/vladislav_melanitskiy.png" alt="Меляницький Владислав" width="250" height="250">
+              <div><img src="img/temp/vladislav_melanitskiy_color.png" alt="Меляницький Владислав" width="250" height="250"></div>
+              <i class="speaker__icon speaker__icon--rk"></i>
             </div>
             <figcaption>
-              <h3>ГЕОРГИЙ КРАСИВЫЙ</h3>
-              <strong>ПРОГРАММИСТ</strong>
-              <p>8 декабря 2010 года объявил, что он присоединился к «Клятве дарения», филантропической кампании миллиардеров Уоррена Баффетта и Билла Гейтса</p>
+              <h3>Меляницький Владислав</h3>
+              <strong>Rapid API Development in Ruby</strong>
+              <p>Буду сравнивать популярные gem'ы для создания и документирования API. Поделюсь наработаными решениями для быстрой и приятной разработки. Можно слушать любому уровню</p>
             </figcaption>
           </figure>
+
           <figure class="speaker">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-4.jpg" alt="РОМАН АНДРЕЕВ">
-              <div><img src="img/temp/" alt="РОМАН АНДРЕЕВ"></div>
+              <img src="img/temp/kos_leschenko.png" alt="Константин Лещенко" width="250" height="250">
+              <div><img src="img/temp/kos_leschenko_color.png" alt="Константин Лещенко" width="250" height="250"></div>
             </div>
             <figcaption>
-              <h3>РОМАН АНДРЕЕВ</h3>
-              <strong>ПРОГРАММИСТ</strong>
-              <p>В январе 2009 года в Пало-Альто познакомился с Юрием Мильнером. 26 мая 2009 года было подписано соглашение, по которому DST за 200 млн долларов США купила 1,96 % акций Facebook</p>
+              <h3>Константин Лещенко</h3>
+              <strong>Екосистема python</strong>
+              <p>Ця доповідь про екосистему Python для новачків і людей, які прийшли з інших мов.</p>
             </figcaption>
           </figure>
+
           <figure class="speaker">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-5.jpg" alt="МАША МЕДВЕДЕВА">
-              <div><img src="img/temp/" alt="МАША МЕДВЕДЕВА"></div>
+              <img src="img/temp/artyom.png" alt="Артем Тритяк" width="250" height="250">
+              <div><img src="img/temp/artyom_color.png" alt="Артем Тритяк" width="250" height="250"></div>
             </div>
             <figcaption>
-              <h3>МАША МЕДВЕДЕВА</h3>
-              <strong>ПРОГРАММИСТ</strong>
-              <p>На протяжении 13 лет работы в Google инженером, дизайнером, менеджером по продукции и руководителем</p>
+              <h3>Артем Тритяк</h3>
+              <strong>Node.js для Front-End разработчиков</strong>
+              <p>Этот доклад о модульных приложениях на Node / Express  для начинающих.</p>
             </figcaption>
           </figure>
+
           <figure class="speaker">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-6.jpg" alt="ЕКАТЕРИНА ЗЕЛЕНАЯ">
-              <div><img src="img/temp/" alt="ЕКАТЕРИНА ЗЕЛЕНАЯ"></div>
+              <img src="img/temp/2.png" alt="Александр Лябах" width="250" height="250">
+              <div><img src="img/temp/2_color.png" alt="Александр Лябах" width="250" height="250"></div>
             </div>
             <figcaption>
-              <h3>ЕКАТЕРИНА ЗЕЛЕНАЯ</h3>
-              <strong>ПРОГРАММИСТ</strong>
-              <p>C отличием окончила Стэнфордский университет со степенью бакалавра по символьным системам и степенью магистра по информатике со специализацией в области искусственного интеллекта.</p>
+              <h3>Александр Лябах</h3>
+              <strong>Как программисту перестать программировать + бонусный трек от CheckiO </strong>
+              <p>Для многих разработчиков стать на определенном этапе Менеджером Проекта это вполне ожидаемый карьерный рост, но по статистике из программистов не лучшие ПМы. Обыдно, да?</p>
             </figcaption>
           </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/1.png" alt="Сергій Пчелінцев" width="250" height="250">
+              <div><img src="img/temp/1_color.png" alt="Сергій Пчелінцев" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Сергій Пчелінцев</h3>
+              <strong>RSpec - как писать минимальный набор тестов для покрытия максимум функционала</strong>
+              <p>Будет рассмотренны случаи из реальных rails приложений и преимущества, которые предоставляет RSpec по сравнению с другими решениями.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/alex_trush.png" alt="Олександр Труш" width="250" height="250">
+              <div><img src="img/temp/alex_trush_color.png" alt="Олександр Труш" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Олександр Труш</h3>
+              <strong>Почему пещера с драгоценными камнями лучше змеиного логова</strong>
+              <p>Сравнение полезности Rails/Django для стартапов</p>
+            </figcaption>
+          </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/radchenkoa.png" alt="Алексей Радченко" width="250" height="250">
+              <div><img src="img/temp/radchenkoa_color.png" alt="Алексей Радченко" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Алексей Радченко</h3>
+              <strong>Автоматическая проверка кода студента в онлайн курсах на платформе Open edX </strong>
+              <p>Open edX - это платформа позволяющая создавать и проходить массовые онлайн курсы. Среди популярных курсов много курсов по программированию на питоне. В докладе будет показано, как организовать автоматическкую проверку программ студента.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/mykyta_semenistyi.png" alt="Никита Семенистый" width="250" height="250">
+              <div><img src="img/temp/mykyta_semenistyi_color.png" alt="Никита Семенистый" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Никита Семенистый</h3>
+              <strong>Поиск зрелых решений на node.js</strong>
+              <p>Взгляд на тенденцию атомарности в node.js модулях и ее последствия для экосистемы в целом. Можно слушать без проблем любому уровню, самым крутым будет чуть менее интересно (а может и нет)</p>
+            </figcaption>
+          </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/shubovich.png" alt="Артем Шубович" width="250" height="250">
+              <div><img src="img/temp/shubovich_color.png" alt="Артем Шубович" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Артем Шубович</h3>
+              <strong>Як нагодувати леммінгів</strong>
+              <p>Уявіть собі купу зв’язаних даних, які постійно приходять до вас на сервер; і Ваша задача - зберегти всі дані і дати якомога швидший доступ до них великій кількості користувачів. Даний доклад розповість, які є неординарні способи зробити це</p>
+            </figcaption>
+          </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/demianchuk.png" alt="Сергій Дем'янчук" width="250" height="250">
+              <div><img src="img/temp/demianchuk_color.png" alt="Сергій Дем'янчук" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Сергій Дем'янчук</h3>
+              <strong>Concurrency in Ruby</strong>
+              <p>"Игра в многопоточность" в Ruby на примере Threads, Fibers, Actors и Celluloid gem. Для продвинутых пользователей.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="speaker">
+            <div class="speaker__img-box">
+              <img src="img/temp/harandzjuk.png" alt="Максим Харандзюк" width="250" height="250">
+              <div><img src="img/temp/harandzjuk_color.png" alt="Максим Харандзюк" width="250" height="250"></div>
+            </div>
+            <figcaption>
+              <h3>Максим Харандзюк</h3>
+              <strong>Everything You Always Wanted to Know About BDD</strong>
+              <p>Как сделать из "базворда" инструмент</p>
+            </figcaption>
+          </figure>
+
         </div>
       </div>
     </section>
 
     <section class="support" id="support">
-      <h2 class="headline">ПОДДЕРЖКА</h2>
+      <h2 class="headline">ПАРТНЕРЫ</h2>
       <div class="wrap">
+        <div class="align-c push--bottom">
+          <a class="support__btn" href="Partnership_Proposal_WeBukovel_2015.pdf" download="">Скачать <br>партнерскую программу</a>
+        </div>
         <article class="support__item">
           <h3>НАШИ ПАРТНЕРЫ</h3>
-          <p>Текст о партнерах и спонсорах <br>Our dear Sponsors</p>
           <ul class="support__logos">
             <li>
-              <a class="support__logo support__logo--google" href="" target="_blank">
-                <img src="img/temp/support-logo-1.png" alt="Google">
+              <a class="support__logo support__logo--opower" href="http://www.opower.com/" target="_blank">
+                <img src="img/temp/support-logo-5.png" alt="Opower">
               </a>
-              <a class="support__logo support__logo--java" href="" target="_blank">
-                <img src="img/temp/support-logo-2.png" alt="Java">
+              <a class="support__logo support__logo--java" href="http://www.electric-cloud.com/" target="_blank">
+                <img src="img/temp/support-logo-4.png" alt="Electric Cloud">
               </a>
             </li>
             <li>
-              <a class="support__logo support__logo--oracle" href="" target="_blank">
-                <img src="img/temp/support-logo-3.png" alt="Oracle">
+              <a class="support__logo support__logo--java" href="http://svitla.com/jobs/" target="_blank">
+                <img src="img/svita.png" alt="Svitla Systems">
               </a>
             </li>
           </ul>
         </article>
         <article class="support__item">
           <h3>НАШИ ДРУЗЬЯ</h3>
-          <p>Наши друзья самые друзья и этот хвалебный текст о них, чтобы им было <br>приятно:)</p>
           <ul class="support__logos">
-            <li>
-              <a class="support__logo support__logo--opower" href="" target="_blank">
-                <img src="img/temp/support-logo-5.png" alt="Opower">
+             <li>
+              <a class="support__logo support__logo--opower" href="http://djinni.co/" target="_blank" style="height: 40px;">
+                <img src="img/djinni.png" alt="Анонимный поиск работы для разработчиков">
               </a>
-            </li>
-            <li>
-              <a class="support__logo support__logo--cloud" href="" target="_blank">
-                <img src="img/temp/support-logo-4.png" alt="Electric Cloud">
+              <a class="support__logo support__logo--java" href="http://www.it-sobytie.ru" target="_blank" style="width: 60px;">
+                <img src="img/it.jpg" alt="IT-sobytie">
               </a>
-              <a class="support__logo support__logo--github" href="" target="_blank">
-                <img src="img/temp/support-logo-6.png" alt="GitHub">
+              <a class="support__logo support__logo--java" href="http://indigo.co.ua/" target="_blank" style="width: 60px;">
+                <img src="img/indigo.png" alt="Indigo">
               </a>
-            </li>
-            <li>
-              <a class="support__logo support__logo--ruby" href="" target="_blank">
-                <img src="img/temp/support-logo-7.png" alt="RubyLight">
+              <a class="support__logo support__logo--java" href="http://geekslab.co/" target="_blank" style="width: 100px;">
+                <img src="img/geekslab.png" alt="Geekslab">
+              </a>
+              <a class="support__logo support__logo--java" href="http://seleniumcamp.com/" target="_blank" style="width: 100px;">
+                <img src="img/seleniumcamp.png" alt="SeleniumCamp">
+              </a>
+
+              <a class="support__logo support__logo--java" href="http://guid.com.ua/" target="_blank" style="width: 130px;">
+                <img src="img/guide.png" alt="GUID">
+              </a>
+
+              <a class="support__logo support__logo--java" href="http://smartme.com.ua/" target="_blank" style="width: 150px;">
+                <img src="img/smartme.png" alt="SmartMe">
+              </a>
+
+              <a class="support__logo support__logo--java" href="http://www.itschool-hillel.org/" target="_blank" style="width: 130px;">
+                <img src="img/itschool.jpg" alt="ITschool">
+              </a>
+
+              <a class="support__logo support__logo--java" href="http://www.fabrika.od.ua" target="_blank" style="width: 130px;">
+                <img src="img/fabrica.jpg" alt="Фабрика">
+              </a>
+
+              <a class="support__logo support__logo--java" href="http://www.binary-studio.com/" target="_blank" style="width: 130px;">
+                <img src="img/binary.png" alt="Binary Studio">
               </a>
             </li>
           </ul>
@@ -175,27 +340,17 @@
         <div class="speakers-list align-c">
           <figure class="speaker speaker--large">
             <div class="speaker__img-box">
-              <img src="img/temp/speaker-7.jpg" alt="ЮЛИЯ ЧЕРНЯК">
-              <div><img src="img/temp/" alt="ЮЛИЯ ЧЕРНЯК"></div>
+              <a href="https://www.linkedin.com/pub/artyom-trityak/24/a1/740">
+                <img src="img/temp/artyom_290×290.png" alt="АРТЕМ ТРИТЯК" width="290" height="290">
+                <div><img src="img/temp/artyom_290×290_color.png" alt="АРТЕМ ТРИТЯК" width="290" height="290"></div>
+              </a>
             </div>
             <figcaption>
-              <h3>ЮЛИЯ ЧЕРНЯК</h3>
-              <strong>ОРГАНИЗАТОР</strong>
-              <ul>
-                <li>email <a href="mailto:julia.cherniak@gmail.com">julia.cherniak@gmail.com</a></li>
-                <li>skype <a href="skype:cherni44ka?call">cherni44ka</a></li>
-                <li>phone <a href="tel:+380503731465">+38 050 373 14 65</a></li>
-              </ul>
-            </figcaption>
-          </figure>
-          <figure class="speaker speaker--large">
-            <div class="speaker__img-box">
-              <img src="img/temp/speaker-8.jpg" alt="АРТЕМ ТРИТЯК">
-              <div><img src="img/temp/" alt="АРТЕМ ТРИТЯК"></div>
-            </div>
-            <figcaption>
-              <h3>АРТЕМ ТРИТЯК</h3>
-              <strong>ПРОГРАММИСТ</strong>
+              <h3>
+                <a href="https://www.linkedin.com/pub/artyom-trityak/24/a1/740">
+                  АРТЕМ ТРИТЯК
+                </a>
+              </h3>
               <ul>
                 <li>email <a href="mailto:art.trityak@gmail.com">art.trityak@gmail.com</a></li>
                 <li>skype <a href="skype:art.trityak?call">art.trityak</a></li>
@@ -203,8 +358,29 @@
               </ul>
             </figcaption>
           </figure>
+
+          <figure class="speaker speaker--large">
+            <div class="speaker__img-box">
+              <a href="https://www.linkedin.com/pub/julia-cherniak/26/23a/403">
+                <img src="img/temp/julia_290×290.png" alt="ЮЛИЯ ЧЕРНЯК" width="290" height="290">
+                <div><img src="img/temp/julia_290×290_color.png" alt="ЮЛИЯ ЧЕРНЯК" width="290" height="290"></div>
+              </a>
+            </div>
+            <figcaption>
+              <h3>
+                <a href="https://www.linkedin.com/pub/julia-cherniak/26/23a/403">
+                  ЮЛИЯ ЧЕРНЯК
+                </a>
+              </h3>
+              <ul>
+                <li>email <a href="mailto:julia.cherniak@gmail.com">julia.cherniak@gmail.com</a></li>
+                <li>skype <a href="skype:cherni44ka?call">cherni44ka</a></li>
+                <li>phone <a href="tel:+380503731465">+38 050 373 14 65</a></li>
+              </ul>
+            </figcaption>
+          </figure>
         </div>
-        <p class="initiators__text"><i></i>БУДЕМ РАДЫ СОТРУДНИЧЕСТВУ!</p>
+        <p class="initiators__text"><i></i>Программируй, катай, общайся!</p>
       </div>
     </section>
   </main>
