@@ -235,7 +235,7 @@ table{width:100%}
 .fixed-socials__btn--tw{background-position:-198px 0}
 .middle{display:table-row;height:100%}
 .content{padding-top:4.14286em}
-.intro{background:url(../img/bg-intro.jpg) 50% 0 no-repeat #030509}
+.intro{background:url(../img/bg-intro.jpg) 50% 0 no-repeat #030509;background-size: cover}
 .intro .wrap{background:url(../img/bg-trees.png) 12px 100% no-repeat}
 .intro__title{float:left;margin-top:6.375em;padding-left:.16667em;width:31.3%;color:#fff;text-align:center;font-size:1.71429em;line-height:1.22}
 .intro .logo{float:left;margin-top:.35714em;-webkit-transition:opacity .3s ease;transition:opacity .3s ease}
@@ -328,6 +328,7 @@ h2,h3{page-break-after:avoid}}
 .speaker__icon{display:none;position:absolute;top:10px;right:10px;z-index:20;width:74px;height:45px;background:url(../img/icon-pro.png) no-repeat}
 .speaker__icon--md{width:56px;height:55px;background:url(../img/icon-mid.png) no-repeat}
 .speaker__icon--rk{width:63px;height:63px;background:url(../img/icon-rookie.png) no-repeat}
+.speaker__icon--party{width:64px;height:56px;background:url(../img/icon-party.png) no-repeat}
 .route{padding-bottom:1px;background:url(../img/bg-car.png) 50% 60.4% no-repeat}
 .route .wrap{position:relative}
 .route .headline{padding-top:1.15em;padding-bottom:.88em}
@@ -347,3 +348,4 @@ h2,h3{page-break-after:avoid}}
 .support__btn{padding:.65em .25em .55em;border-radius:8px;background-color:#00a8ff;display:inline-block;text-transform:uppercase;color:#fff;font-size:1.429em;text-align:center;line-height:1.15}
 .support__btn:hover{background-color:#00a0f0;color:#fff}
 .support__btn:active{-webkit-box-shadow:inset 0 1px 6px 2px #006ea6;box-shadow:inset 0 1px 6px 2px #006ea6;color:#fff}
+.visible{display: block !important}
