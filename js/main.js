@@ -16,8 +16,8 @@ $(function(){
 
   function initialize() {
     var mapOptions = {
-      zoom: 18,
-      center: new google.maps.LatLng(48.359400, 24.409100),
+      zoom: 16,
+      center: new google.maps.LatLng(48.341816, 24.534792),
       disableDefaultUI: true,
       zoomControl: true,
       scrollwheel: false
@@ -25,9 +25,9 @@ $(function(){
     var map = new google.maps.Map($map[0], mapOptions);
 
     new google.maps.Marker({
-      position: new google.maps.LatLng(48.359550, 24.408221),
+      position: new google.maps.LatLng(48.341816, 24.534792),
       map: map,
-      title: 'Развлекательный центр «Бука»',
+      title: 'Туристический комплекс «Ольга»',
       icon: './img/icon-marker.png'
     });
   }
